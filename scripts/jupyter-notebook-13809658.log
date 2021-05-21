@@ -1,0 +1,11 @@
+[I 2021-05-21 15:52:23.478 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-05-21 15:52:23.833 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-05-21 15:52:23.864 LabApp] JupyterLab extension loaded from /home/baker02/miniconda3/envs/tidyscreen/lib/python3.9/site-packages/jupyterlab
+[I 2021-05-21 15:52:23.865 LabApp] JupyterLab application directory is /home/baker02/miniconda3/envs/tidyscreen/share/jupyter/lab
+[I 2021-05-21 15:52:23.868 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-05-21 15:52:23.875 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-05-21 15:52:23.878 ServerApp] Serving notebooks from local directory: /mnt/scratcha/fmlab/baker02/crigen
+[I 2021-05-21 15:52:23.878 ServerApp] Jupyter Server 1.6.1 is running at:
+[I 2021-05-21 15:52:23.878 ServerApp] http://clust1-node-1:9579/lab
+[I 2021-05-21 15:52:23.878 ServerApp]     http://127.0.0.1:9579/lab
+[I 2021-05-21 15:52:23.878 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).

@@ -1,0 +1,610 @@
+[I 2021-05-14 09:52:48.997 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-05-14 09:52:49.348 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-05-14 09:52:49.382 LabApp] JupyterLab extension loaded from /home/baker02/miniconda3/envs/tidyscreen/lib/python3.9/site-packages/jupyterlab
+[I 2021-05-14 09:52:49.382 LabApp] JupyterLab application directory is /home/baker02/miniconda3/envs/tidyscreen/share/jupyter/lab
+[I 2021-05-14 09:52:49.386 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-05-14 09:52:49.394 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-05-14 09:52:49.397 ServerApp] Serving notebooks from local directory: /mnt/scratcha/fmlab/baker02/tidyscreen
+[I 2021-05-14 09:52:49.397 ServerApp] Jupyter Server 1.6.1 is running at:
+[I 2021-05-14 09:52:49.397 ServerApp] http://clust1-node-3:9290/lab
+[I 2021-05-14 09:52:49.397 ServerApp]     http://127.0.0.1:9290/lab
+[I 2021-05-14 09:52:49.397 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2021-05-14 10:08:23.066 ServerApp] 302 GET / (10.20.236.34) 0.59ms
+[W 2021-05-14 10:08:27.073 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-05-14 10:08:49.630 ServerApp] Kernel started: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 10:08:49.998 ServerApp] Kernel started: 5bf9e9de-9265-436a-9cc3-153174c3dabf
+[I 2021-05-14 10:08:50.374 ServerApp] Adapting from protocol version 5.0 (kernel 19eb3ba0-1821-4bd1-a120-69c3108917a1) to 5.3 (client).
+[I 2021-05-14 10:08:50.601 ServerApp] Adapting from protocol version 5.0 (kernel 5bf9e9de-9265-436a-9cc3-153174c3dabf) to 5.3 (client).
+[I 2021-05-14 10:08:50.603 ServerApp] Adapting from protocol version 5.0 (kernel 5bf9e9de-9265-436a-9cc3-153174c3dabf) to 5.3 (client).
+[I 2021-05-14 10:08:50.625 ServerApp] Adapting from protocol version 5.0 (kernel 5bf9e9de-9265-436a-9cc3-153174c3dabf) to 5.3 (client).
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_12_lymphocytes_of_b_lineage.rds'
+Content type 'application/octet-stream' length 1349040 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 10:09:16.789 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:09:36.975 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 10:11:19.652 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:12:38.519 ServerApp] Saving file at /notebooks/dygen_generating_multiple_cell_populations.ipynb
+[I 2021-05-14 10:14:40.610 ServerApp] Saving file at /notebooks/dygen_generating_multiple_cell_populations.ipynb
+[I 2021-05-14 10:16:42.516 ServerApp] Saving file at /notebooks/dygen_generating_multiple_cell_populations.ipynb
+[I 2021-05-14 10:23:05.545 ServerApp] Kernel interrupted: 5bf9e9de-9265-436a-9cc3-153174c3dabf
+[I 2021-05-14 10:24:47.411 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 10:24:47.784 ServerApp] Saving file at /notebooks/dygen_generating_multiple_cell_populations.ipynb
+[I 2021-05-14 10:25:13.435 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[W 2021-05-14 10:25:57.067 ServerApp] delete /notebooks/slurmr-job-1d1e635433e4
+[W 2021-05-14 10:25:57.068 ServerApp] Skipping trash for /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-1d1e635433e4, on different device to home directory
+[W 2021-05-14 10:25:57.070 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-1d1e635433e4?1620984357043 (10.20.236.34): Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-1d1e635433e4 not empty
+[W 2021-05-14 10:25:57.070 ServerApp] Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-1d1e635433e4 not empty
+[W 2021-05-14 10:25:57.070 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-1d1e635433e4?1620984357043 (10.20.236.34) 3.87ms referer=http://localhost:9290/lab/tree/notebooks/dygen_KO_generate.ipynb
+[W 2021-05-14 10:25:57.072 ServerApp] delete /notebooks/slurmr-job-1d55725fa969
+[W 2021-05-14 10:25:57.072 ServerApp] Skipping trash for /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-1d55725fa969, on different device to home directory
+[W 2021-05-14 10:25:57.073 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-1d55725fa969?1620984357045 (10.20.236.34): Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-1d55725fa969 not empty
+[W 2021-05-14 10:25:57.074 ServerApp] Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-1d55725fa969 not empty
+[W 2021-05-14 10:25:57.074 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-1d55725fa969?1620984357045 (10.20.236.34) 2.77ms referer=http://localhost:9290/lab/tree/notebooks/dygen_KO_generate.ipynb
+[W 2021-05-14 10:25:57.076 ServerApp] delete /notebooks/slurmr-job-336662f3a4a4
+[W 2021-05-14 10:25:57.076 ServerApp] Skipping trash for /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-336662f3a4a4, on different device to home directory
+[W 2021-05-14 10:25:57.078 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-336662f3a4a4?1620984357048 (10.20.236.34): Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-336662f3a4a4 not empty
+[W 2021-05-14 10:25:57.078 ServerApp] Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-336662f3a4a4 not empty
+[W 2021-05-14 10:25:57.078 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-336662f3a4a4?1620984357048 (10.20.236.34) 2.73ms referer=http://localhost:9290/lab/tree/notebooks/dygen_KO_generate.ipynb
+[W 2021-05-14 10:25:57.082 ServerApp] delete /notebooks/slurmr-job-912f2934e194
+[W 2021-05-14 10:25:57.082 ServerApp] Skipping trash for /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-912f2934e194, on different device to home directory
+[W 2021-05-14 10:25:57.083 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-912f2934e194?1620984357054 (10.20.236.34): Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-912f2934e194 not empty
+[W 2021-05-14 10:25:57.084 ServerApp] Directory /mnt/scratcha/fmlab/baker02/tidyscreen/notebooks/slurmr-job-912f2934e194 not empty
+[W 2021-05-14 10:25:57.084 ServerApp] 400 DELETE /api/contents/notebooks/slurmr-job-912f2934e194?1620984357054 (10.20.236.34) 2.80ms referer=http://localhost:9290/lab/tree/notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:26:53.841 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:27:11.979 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:27:54.357 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:28:08.340 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:28:13.976 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+sbatch: unrecognized option '--cpus_per_task=1'
+Try "sbatch --help" for more information
+[I 2021-05-14 10:29:10.246 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+sbatch: unrecognized option '--cpus_per_task=1'
+Try "sbatch --help" for more information
+[I 2021-05-14 10:29:42.421 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 10:29:43.450 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 10:30:10.287 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:32:11.754 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:32:15.692 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+sbatch: unrecognized option '--cpus_per_task=1'
+Try "sbatch --help" for more information
+[I 2021-05-14 10:34:19.663 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:35:27.446 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:35:28.271 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+sbatch: unrecognized option '--cpus_per_task=1'
+Try "sbatch --help" for more information
+[I 2021-05-14 10:36:51.890 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+sbatch: unrecognized option '--cpus_per_task=1'
+Try "sbatch --help" for more information
+[I 2021-05-14 10:38:53.745 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:43:53.364 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:44:19.073 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:44:33.762 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:44:35.346 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:44:40.297 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:45:00.035 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:45:10.423 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+sbatch: unrecognized option '--cpus_per_task=1'
+Try "sbatch --help" for more information
+[I 2021-05-14 10:45:31.474 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:45:32.749 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+sbatch: unrecognized option '--cpus_per_task=1'
+Try "sbatch --help" for more information
+[I 2021-05-14 10:45:37.619 ServerApp] Kernel restarted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 10:45:37.722 ServerApp] Starting buffering for 19eb3ba0-1821-4bd1-a120-69c3108917a1:6d866c95-a082-490b-9345-0c52790048e0
+[I 2021-05-14 10:45:37.747 ServerApp] Adapting from protocol version 5.0 (kernel 19eb3ba0-1821-4bd1-a120-69c3108917a1) to 5.3 (client).
+[I 2021-05-14 10:45:37.747 ServerApp] Restoring connection for 19eb3ba0-1821-4bd1-a120-69c3108917a1:6d866c95-a082-490b-9345-0c52790048e0
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_12_lymphocytes_of_b_lineage.rds'
+Content type 'application/octet-stream' length 1349040 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 10:47:34.450 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:49:12.174 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:49:39.566 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:50:53.959 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:51:04.374 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:53:05.900 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:54:30.046 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:54:34.718 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:54:36.946 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:54:54.324 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:56:55.993 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:57:46.196 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:57:53.425 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:58:01.794 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 10:58:37.899 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:00:39.283 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:01:14.661 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:01:15.455 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:01:45.316 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:02:40.799 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:03:52.889 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:04:10.817 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:04:42.908 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:05:03.375 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:05:16.960 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:06:02.445 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:06:34.252 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:06:49.037 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:07:45.525 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:08:07.955 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:08:15.567 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:08:18.040 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:09:06.102 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:09:07.810 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:09:08.298 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:09:08.492 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:09:08.642 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:09:08.794 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:10:19.764 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:11:08.186 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:11:15.794 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:11:18.157 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:11:21.802 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:11:52.454 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:12:09.208 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:12:09.380 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:12:09.564 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:12:09.722 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:12:09.896 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:12:13.970 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:12:18.337 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:13:00.550 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:13:18.718 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:13:31.077 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:13:37.381 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:20:46.003 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_cell-cycle_leng.rds'
+Content type 'application/octet-stream' length 1105552 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+[I 2021-05-14 11:21:54.155 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:21:58.893 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:22:26.686 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:22:39.663 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:22:50.137 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:22:53.954 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:22:59.574 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:23:10.272 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:23:14.454 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:23:37.580 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:24:02.220 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:24:12.422 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:25:13.067 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:25:54.383 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:27:01.000 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:27:06.383 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:27:08.191 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_12_lymphocytes_of_b_lineage.rds'
+Content type 'application/octet-stream' length 1349040 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 11:29:09.750 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:31:11.189 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:32:04.697 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:34:06.181 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:35:39.324 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:35:52.948 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:36:07.007 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:37:12.845 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:37:34.668 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:38:02.677 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:38:07.072 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:38:19.556 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:39:42.769 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:39:54.472 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:40:13.879 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:42:16.167 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:45:09.648 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:45:54.483 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:46:44.828 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:47:02.755 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:47:15.469 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:47:33.730 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:47:41.678 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:47:50.484 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:48:06.967 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:48:09.707 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:50:11.339 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_cell-cycle_leng.rds'
+Content type 'application/octet-stream' length 1105552 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+[I 2021-05-14 11:54:13.073 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:54:21.686 ServerApp] Saving file at /notebooks/dygen_generating_multiple_cell_populations.ipynb
+[I 2021-05-14 11:54:42.013 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:55:45.059 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:55:56.112 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 11:56:43.566 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:58:45.054 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:58:58.874 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 11:59:14.464 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:01:16.103 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:02:20.464 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:02:23.376 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:02:55.853 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:04:29.919 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:04:51.580 ServerApp] Kernel interrupted: 19eb3ba0-1821-4bd1-a120-69c3108917a1
+[I 2021-05-14 12:05:14.735 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:07:16.228 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:07:51.509 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:08:22.300 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:08:30.371 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:09:03.611 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_cell-cycle_leng.rds'
+Content type 'application/octet-stream' length 1105552 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+[I 2021-05-14 12:15:05.374 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:25:07.142 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:25:30.372 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:26:12.322 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:26:20.835 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:26:36.169 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:28:38.628 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:33:56.109 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:34:37.696 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:34:57.102 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:35:34.989 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:35:37.536 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:36:04.020 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:36:16.822 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:36:43.688 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:36:48.523 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:37:34.939 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:37:43.436 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:37:54.694 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:39:18.163 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:39:56.561 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:40:38.977 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:41:16.052 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:41:19.707 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:42:01.023 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:42:57.463 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:43:01.414 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:43:05.083 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:43:25.527 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:43:41.592 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:43:43.583 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:43:50.443 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:43:56.740 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:45:56.989 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_cell-cycle_leng.rds'
+Content type 'application/octet-stream' length 1105552 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+[I 2021-05-14 12:49:57.342 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:50:46.570 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:51:02.461 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:53:02.753 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:54:40.234 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:55:01.818 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:55:05.384 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:55:24.628 ServerApp] Creating new notebook in /notebooks
+[I 2021-05-14 12:55:25.330 ServerApp] Kernel started: 2651ff48-ef7f-4569-92d0-b099ee16c9fb
+[I 2021-05-14 12:55:26.071 ServerApp] Adapting from protocol version 5.0 (kernel 2651ff48-ef7f-4569-92d0-b099ee16c9fb) to 5.3 (client).
+[I 2021-05-14 12:55:26.074 ServerApp] Adapting from protocol version 5.0 (kernel 2651ff48-ef7f-4569-92d0-b099ee16c9fb) to 5.3 (client).
+[I 2021-05-14 12:55:26.097 ServerApp] Adapting from protocol version 5.0 (kernel 2651ff48-ef7f-4569-92d0-b099ee16c9fb) to 5.3 (client).
+[I 2021-05-14 12:56:40.856 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 12:56:43.083 ServerApp] Kernel started: d64fdff2-db40-43c5-99dc-7c60c646ad2c
+[I 2021-05-14 12:56:43.716 ServerApp] Adapting from protocol version 5.0 (kernel d64fdff2-db40-43c5-99dc-7c60c646ad2c) to 5.3 (client).
+[I 2021-05-14 12:56:44.079 ServerApp] Starting buffering for d64fdff2-db40-43c5-99dc-7c60c646ad2c:c38f9af5-7cb5-45aa-b8fc-e29ae6db78af
+[I 2021-05-14 12:57:05.638 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 12:57:42.693 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 12:59:42.789 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:00:07.999 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:00:10.961 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_cell-cycle_leng.rds'
+Content type 'application/octet-stream' length 1105552 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+[I 2021-05-14 13:01:07.067 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 13:01:30.246 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:01:38.641 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_12_lymphocytes_of_b_lineage.rds'
+Content type 'application/octet-stream' length 1349040 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 13:02:39.320 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:02:47.469 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:04:47.553 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:04:50.171 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_09_connective_tissue_integumental_cells.rds'
+Content type 'application/octet-stream' length 1346540 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 13:05:31.654 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:05:33.854 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 13:06:35.202 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:06:40.417 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:06:47.090 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:07:29.268 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_12_lymphocytes_of_b_lineage.rds'
+Content type 'application/octet-stream' length 1349040 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 13:07:33.299 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:09:16.262 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_10_lymphocytes.rds'
+Content type 'application/octet-stream' length 1403268 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 13:10:41.602 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_10_lymphocytes.rds'
+Content type 'application/octet-stream' length 1403268 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_09_connective_tissue_integumental_cells.rds'
+Content type 'application/octet-stream' length 1346540 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 13:11:18.542 ServerApp] Kernel interrupted: 2651ff48-ef7f-4569-92d0-b099ee16c9fb
+[I 2021-05-14 13:11:24.796 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_21_heart.rds'
+[I 2021-05-14 13:11:26.217 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+Content type 'application/octet-stream' length 1339736 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+Error in (function (x)  : attempt to apply non-function
+Error in x$.self$finalize() : attempt to apply non-function
+Error in x$.self$finalize() : attempt to apply non-function
+Error in x$.self$finalize() : attempt to apply non-function
+Error in x$.self$finalize() : attempt to apply non-function
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_28_neuroectodermal_tumors_sarcoma.rds'
+Content type 'application/octet-stream' length 1347328 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+[I 2021-05-14 13:13:26.305 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:17:14.985 ServerApp] Creating new notebook in /notebooks
+[I 2021-05-14 13:17:15.723 ServerApp] Kernel started: 08b72833-da9d-405a-84cc-5cf113a27e29
+[I 2021-05-14 13:17:16.390 ServerApp] Adapting from protocol version 5.0 (kernel 08b72833-da9d-405a-84cc-5cf113a27e29) to 5.3 (client).
+[I 2021-05-14 13:17:34.633 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 13:19:15.515 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 13:19:18.511 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 13:19:19.872 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 13:21:19.954 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 13:32:55.254 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:41:20.093 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 13:41:42.673 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 13:41:43.519 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_25_pineal_gland_eye.rds'
+Content type 'application/octet-stream' length 1295468 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+[I 2021-05-14 13:56:55.465 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:56:56.022 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 13:57:06.296 ServerApp] Adapting from protocol version 5.0 (kernel d64fdff2-db40-43c5-99dc-7c60c646ad2c) to 5.3 (client).
+[I 2021-05-14 13:57:20.293 ServerApp] Creating new file in /scripts
+[I 2021-05-14 13:57:43.691 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 13:58:03.282 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 13:59:13.804 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 13:59:38.628 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 13:59:44.292 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:00:07.096 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:00:11.723 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:00:29.069 ServerApp] Saving file at /notebooks/dyngen_KO_tutorial.ipynb
+[I 2021-05-14 14:00:32.165 ServerApp] Saving file at /notebooks/dyngen_KO_tutorial.ipynb
+[I 2021-05-14 14:00:41.078 ServerApp] Saving file at /notebooks/dyngen_KO_tutorial.ipynb
+[I 2021-05-14 14:01:04.878 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:01:21.927 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:01:28.596 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:01:31.541 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:02:10.629 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:02:35.967 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:03:01.685 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:03:10.275 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_22_mouth_throat_skeletal_muscle_tissue.rds'
+Content type 'application/octet-stream' length 1290500 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+Error in x$.self$finalize() : attempt to apply non-function
+[I 2021-05-14 14:04:20.826 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:05:54.113 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_trophoblast-stem-cell-trophoblast-differentiation_mca.rds'
+Content type 'application/octet-stream' length 5889516 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+[I 2021-05-14 14:11:54.489 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:14:11.848 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:14:14.226 ServerApp] Starting buffering for d64fdff2-db40-43c5-99dc-7c60c646ad2c:38e85f56-84ef-4d85-aa17-c84a49d47dc2
+[I 2021-05-14 14:15:35.124 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 14:15:39.071 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 14:16:12.290 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:16:27.628 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:16:38.888 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:17:39.332 ServerApp] Saving file at /notebooks/dygen_KO_generate.ipynb
+[I 2021-05-14 14:17:40.158 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:17:47.154 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:17:49.761 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:18:28.346 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:20:20.278 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:20:28.978 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_mouse-cell-atlas-combination-4.rds'
+Content type 'application/octet-stream' length 332520 bytes (324 KB)
+==================================================
+downloaded 324 KB
+
+[I 2021-05-14 14:22:20.333 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:22:34.685 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:22:56.350 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 14:23:06.755 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:23:17.475 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:25:07.219 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:25:25.763 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:25:28.529 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:25:32.027 ServerApp] Saving file at /scripts/perturbation.R
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_22_mouth_throat_skeletal_muscle_tissue.rds'
+Content type 'application/octet-stream' length 1290500 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+[I 2021-05-14 14:25:45.872 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:27:45.959 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_trophoblast-stem-cell-trophoblast-differentiation_mca.rds'
+Content type 'application/octet-stream' length 5889516 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+[I 2021-05-14 14:33:21.995 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:33:46.324 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:33:47.556 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:33:50.961 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:33:52.469 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:34:23.696 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:36:24.103 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:37:35.944 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:37:43.514 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:38:30.097 ServerApp] Saving file at /scripts/perturbation.R
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_22_mouth_throat_skeletal_muscle_tissue.rds'
+Content type 'application/octet-stream' length 1290500 bytes (1.2 MB)
+======================================[I 2021-05-14 14:38:36.559 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+============
+downloaded 1.2 MB
+
+[I 2021-05-14 14:38:49.602 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:38:53.043 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:40:53.155 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_trophoblast-stem-cell-trophoblast-differentiation_mca.rds'
+Content type 'application/octet-stream' length 5889516 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+[I 2021-05-14 14:46:53.647 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:48:54.205 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:51:53.812 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:51:59.895 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:52:16.645 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:52:35.194 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:52:39.757 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:52:43.069 ServerApp] Saving file at /scripts/perturbation.R
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_22_mouth_throat_skeletal_muscle_tissue.rds'
+[I 2021-05-14 14:52:54.705 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+Content type 'application/octet-stream' length 1290500 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+[I 2021-05-14 14:53:30.734 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:53:52.864 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:54:07.177 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:54:22.210 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:54:31.204 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:54:32.379 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:54:35.920 ServerApp] Kernel restarted: 08b72833-da9d-405a-84cc-5cf113a27e29
+[I 2021-05-14 14:54:36.002 ServerApp] Starting buffering for 08b72833-da9d-405a-84cc-5cf113a27e29:ae55300b-1027-42f3-a914-319be79ee47f
+[I 2021-05-14 14:54:36.020 ServerApp] Adapting from protocol version 5.0 (kernel 08b72833-da9d-405a-84cc-5cf113a27e29) to 5.3 (client).
+[I 2021-05-14 14:54:36.021 ServerApp] Restoring connection for 08b72833-da9d-405a-84cc-5cf113a27e29:ae55300b-1027-42f3-a914-319be79ee47f
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_22_mouth_throat_skeletal_muscle_tissue.rds'
+Content type 'application/octet-stream' length 1290500 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+[I 2021-05-14 14:55:42.758 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:55:45.562 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:55:49.843 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 14:55:52.354 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:56:03.021 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:58:03.107 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 14:58:20.387 ServerApp] Creating new notebook in /scripts
+[I 2021-05-14 14:58:21.256 ServerApp] Kernel started: b357697d-3f62-43e8-9f3d-ee5ec91b4ca3
+[I 2021-05-14 14:58:22.028 ServerApp] Adapting from protocol version 5.0 (kernel b357697d-3f62-43e8-9f3d-ee5ec91b4ca3) to 5.3 (client).
+[I 2021-05-14 14:58:24.507 ServerApp] Kernel shutdown: b357697d-3f62-43e8-9f3d-ee5ec91b4ca3
+[W 2021-05-14 14:58:24.653 ServerApp] delete /scripts/Untitled.ipynb
+[W 2021-05-14 14:58:24.654 ServerApp] Skipping trash for /mnt/scratcha/fmlab/baker02/tidyscreen/scripts/Untitled.ipynb, on different device to home directory
+[I 2021-05-14 14:58:29.375 ServerApp] Kernel started: d731b428-dd14-4055-b44c-26e49ef50bbb
+[I 2021-05-14 14:58:29.997 ServerApp] Adapting from protocol version 5.0 (kernel d731b428-dd14-4055-b44c-26e49ef50bbb) to 5.3 (client).
+[I 2021-05-14 14:58:32.214 ServerApp] Starting buffering for d731b428-dd14-4055-b44c-26e49ef50bbb:b4df3939-6329-4469-bdab-356d6f951cda
+[I 2021-05-14 14:58:35.874 ServerApp] Creating new file in /scripts
+[I 2021-05-14 14:59:05.239 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 14:59:13.530 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 14:59:33.483 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 14:59:39.215 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 14:59:44.546 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:00:15.657 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:00:29.046 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 15:00:33.606 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:01:00.464 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:01:56.354 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:01:57.818 ServerApp] Saving file at /scripts/test_large_dyngen.R
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_trophoblast-stem-cell-trophoblast-differentiation_mca.rds'
+Content type 'application/octet-stream' length 5889516 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+[I 2021-05-14 15:02:29.152 ServerApp] Saving file at /notebooks/generate_wills_data.ipynb
+[I 2021-05-14 15:03:46.908 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:04:03.377 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:07:07.967 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 15:07:08.961 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:07:11.759 ServerApp] Kernel restarted: 08b72833-da9d-405a-84cc-5cf113a27e29
+[I 2021-05-14 15:07:11.770 ServerApp] Starting buffering for 08b72833-da9d-405a-84cc-5cf113a27e29:ae55300b-1027-42f3-a914-319be79ee47f
+[I 2021-05-14 15:07:11.786 ServerApp] Adapting from protocol version 5.0 (kernel 08b72833-da9d-405a-84cc-5cf113a27e29) to 5.3 (client).
+[I 2021-05-14 15:07:11.786 ServerApp] Restoring connection for 08b72833-da9d-405a-84cc-5cf113a27e29:ae55300b-1027-42f3-a914-319be79ee47f
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/regulatorycircuits_22_mouth_throat_skeletal_muscle_tissue.rds'
+Content type 'application/octet-stream' length 1290500 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+[I 2021-05-14 15:09:09.322 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:10:32.945 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:10:35.854 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_trophoblast-stem-cell-trophoblast-differentiation_mca.rds'
+Content type 'application/octet-stream' length 5889516 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+[I 2021-05-14 15:14:38.337 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:15:06.658 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:15:15.463 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 15:15:27.648 ServerApp] Saving file at /scripts/perturbation.R
+[I 2021-05-14 15:16:18.509 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:17:46.918 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:18:23.239 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:19:05.212 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:19:15.395 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:20:02.306 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:20:03.824 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:20:16.456 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:21:49.314 ServerApp] Saving file at /scripts/cluster_run_perturb_models.R
+[I 2021-05-14 15:21:56.076 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:22:10.327 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:22:32.512 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:22:36.099 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:22:53.644 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:22:58.229 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:23:07.248 ServerApp] Creating new directory in /data
+[I 2021-05-14 15:23:26.161 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:24:11.281 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:24:33.911 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:24:40.687 ServerApp] Saving file at /scripts/test_large_dyngen.R
+trying URL 'https://github.com/dynverse/dyngen/raw/data_files/zenodo_1443566_real_silver_trophoblast-stem-cell-trophoblast-differentiation_mca.rds'
+Content type 'application/octet-stream' length 5889516 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+[I 2021-05-14 15:25:13.682 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:25:15.497 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
+[I 2021-05-14 15:25:17.661 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:25:25.357 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:25:30.297 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:25:42.615 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:25:54.285 ServerApp] Saving file at /scripts/test_large_dyngen.R
+[I 2021-05-14 15:26:11.898 ServerApp] Saving file at /notebooks/dyngen_KO_test.ipynb
