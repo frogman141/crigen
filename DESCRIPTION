@@ -1,0 +1,30 @@
+Package: crigen
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alexander",
+           family = "Baker",
+           role = c("aut", "cre"),
+           email = "alexander.baker@cruk.cam.ac.uk")
+Description: Crigen is a Single Cell CRISPR simulator.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends:
+    dyno,
+    scran,
+    scater,
+    slurmR,
+    igraph,
+    dyngen,
+    dynutils,
+    parallel,
+    tidyverse,
+    assertthat,
+    data.table,
+    matrixStats
+Imports:
+    magrittr
