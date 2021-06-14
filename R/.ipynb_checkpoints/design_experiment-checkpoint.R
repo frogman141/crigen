@@ -1,89 +1,120 @@
-# configure_dyngen is responsible for configuring the common model that'll be used to simulate perturbations. It takes a population backbone that
-# is created by create_cellpops along with some parameters such as num of cells, egenes, and housing keeping (hk) genes, along with other technical parameters.
+#' Set Parameters for In Silico gRNA Experiment
+#' @param ncellpops null
+#' @param edge_probs null
+#' @param ntfs_per_cellpop null
+#' @param nhk null
+#' @param ngenes null
+#' @param nsimulations null
+#' @param ngrnas_per_target null
+#' @param ncells_per_model null
+#' @param census_interval null
+#' @param tau null
+#' @param ntarget null
+#' @param target_tf_only null
+#' @param grna_library null
+#' @param experiment_type null
+#' @param ctrl_label null
+#' @param cache_dir null
 #' @export
-configure_dyngen <- function(crigen_obj, num_of_cells=1000, num_of_tfs=nrow(backbone$module_info), num_of_egenes=500,
-                             num_of_hk=9000, num_of_sims=100, census_interval=10, tau=100/3600) {
+design_experiment <- function(
+    ncellpops=1,
+    edge_probs=0.2,
+    ntfs_per_cellpop=sample(10:20, ncellpops, replace=TRUE),
+    grna_to_ctrl_ratio=runif(1),
+    nhk=9000,
+    negenes=500,
+    nsimulations=100,
+    ngrnas_per_target=3,
+    ncells_per_model=1000,
+    census_interval=10,
+    tau=100/3600,
+    ntargets=sum(ntfs_per_cellpop),
+    ncells_in_experiment=10000,
+    target_tf_only=TRUE,
+    grna_library='default',
+    experiment_type='ko',
+    ctrl_label='CTRL',
+    cache_dir=file.path(getwd(), 'cache')) {
     
-    # create gold standard and simulation params
-    gold_standard <- gold_standard_default(census_interval = 1, tau = tau)
-    sim_params <- simulation_default(census_interval = census_interval, ssa_algorithm = ssa_etl(tau = tau),
-                                     experiment_params = simulation_type_wild_type(num_simulations = num_of_sims))
+    cellpop_params <- config_cellpop_params(ncellpops, edge_probs, ntfs_per_cellpop)
     
-    # configure and initialize common dyngen model
-    config = initialise_model(backbone = backbone,
-                              num_tfs = num_of_tfs,
-                              num_cells = num_of_cells,
-                              num_targets = num_of_egenes,
-                              num_hks = num_of_hk,
-                              simulation_params = sim_params,
-                              gold_standard_params = gold_standard)
+    simulator_params <- config_simulator_params(nhk, negenes, nsimulations,
+                                                ntfs_per_cellpop, ncells_per_model, census_interval, tau)
     
-    # simulate gold standard for common model
-    crigen_obj$common_model = config %>%
-                                  generate_tf_network() %>%
-                                  generate_feature_network() %>% 
-                                  generate_kinetics() %>%
-                                  generate_gold_standard()
-
+    experiment_params <- config_experiment_params(ntargets, target_tf_only, grna_library,
+                                                  ngrnas_per_target, ncells_in_experiment,
+                                                  grna_to_ctrl_ratio, experiment_type, ctrl_label,
+                                                  cache_dir)
+    
+    crigen_obj <- list(cellpop_params=cellpop_params,
+                       simulator_params=simulator_params,
+                       experiment_params=experiment_params)
+    
     return (crigen_obj)
 }
 
-#' @export
-design_experiment <- function(crigen_obj, num_of_targets=0, target_tf_only=TRUE, num_of_grnas=3, library='default', experiment_type='KO'){
-    crigen_obj$grna_meta <- data.frame()
-    genes_meta <- extract_genes_meta(crigen_obj$common_model, num_of_targets, target_tf_only)
+config_cellpop_params <- function(ncellpops, edge_prob, ntfs_per_cellpop) {
     
-    for (target_gene in target_genes){
-        grna = create_grna(genes_meta$target_genes, genes_meta$genes, num_of_grnas, library, experiment_type)
-        crigen_obj$grna_meta = rbind(crigen_obj$grna_meta, grna)
+    if (edge_prob >= 1){
+        stop("Edge Probability must be less than 1...") 
     }
     
-    return (crigen_obj)
+     if (!as.vector(ntfs_per_cellpop)){
+         stop("ntfs_per_cellpop parameter must be a vector...")
+     }
+    
+    if (ncellpops != length(ntfs_per_cellpop)){
+        stop("ncellpops doesn't equal ntfs_per_cellpop...")
+    }
+    
+    cellpop_params <- list(ncellpops=ncellpops, edge_prob=edge_prob, ntfs_per_cellpop=ntfs_per_cellpop)
+    return (cellpop_params)
 }
 
-
-extract_genes_meta <- function(common_model, num_of_targets, target_tf_only) {
-    # extract and randomly select target genes. This function heavily relays upon dyngen creating the 
-    # gene regulatory network.
-    burn_tfs <- common_model$feature_info %>% filter(burn == TRUE & is_tf == TRUE & is_hk == FALSE) %>% pull(feature_id) %>% as.character
-    grn_network <- common_model$feature_info %>% filter(!feature_id %in% burn_tfs)
-    genes <- grn_network %>% pull(feature_id) %>% as.character
+config_simulator_params <- function(nhk, negenes, nsimulations, ntfs_per_cellpop,
+                                    ncells_per_model, census_interval, tau) {
+    sim_params <- list(num_hks = nhk,
+                       num_targets = negenes,
+                       num_tfs = sum(ntfs_per_cellpop),
+                       num_cells = ncells_per_model,
+                       num_simulations = nsimulations,
+                       census_intervals = census_interval,
+                       tau = tau)
     
-    if (target_tf_only == TRUE) {
-        target_genes <- grn_network %>% filter(is_tf == TRUE) %>% pull(feature_id) %>% as.character
-    } else {
-        target_genes <- genes
-    }
-    
-    if (num_of_targets != 0 & num_of_targets <= length(target_genes)) {
-        target_genes <- sample(target_genes, num_of_targets)
-    } 
-    
-    return (list(target_genes=target_genes, genes=genes))
+    return (sim_params)
 }
 
-create_grna <- function(target_gene, genes, num_of_grnas, library, experiment_type){
-    target_gene_grna = data.frame()
-    
-    for (grna_i in 1:num_of_grnas) {
-        
-        off_target_meta <- off_target(genes, library)
-        grna_name <- paste0(target_gene, '_grna_', grna_i)
-        perturb_genes <- c(target_gene, off_target_meta$off_target_genes)
-        on_target_activity <- on_target(perturb_genes, off_target_meta$num_of_genes, library, experiment_type)
-        
-        
-        grna <- data.frame(grna = grna_name,
-                          gene = perturb_genes,
-                          is_target = FALSE,
-                          off_target_count = off_target_meta$num_off_targets,
-                          on_target = on_target_activity, 
-                          experiment_type = experiment_type, 
-                          library = library)
-        
-        grna <- grna %>% mutate(is_target=ifelse(gene == target_gene, TRUE, is_target))
-        target_gene_grna <- rbind(target_gene_grna, grna)
+config_experiment_params <- function(ntargets, target_tf_only, grna_library,
+                                     ngrnas_per_target, ncells_in_experiment,
+                                     grna_to_ctrl_ratio, experiment_type, ctrl_label,
+                                     cache_dir) {
+    if (ntargets <= 0) {
+        stop("Number of Target Genes Specified is Equal to or less that 0...")
     }
     
-    return (target_gene_grna)
+    if (!target_tf_only %in% c(TRUE, FALSE)) {
+        stop("target_tf_only Parameter is not a Boolean value...")
+    }
+    
+    if (!grna_library %in% c("perfect", "default")) {
+        stop("gRNA Library Specified is Currently Not Supported by Crigen...")
+    }
+    
+    if (!experiment_type %in% c("ko", "interference")) {
+        stop("Type of CRISPR Experimental Specified is Currently Not Supported by Crigen...")
+    }
+    
+    ncells_to_sample = (ncells_in_experiment / ntargets)
+    expr_params <- list(ntargets=ntargets,
+                        grna_library=grna_library,
+                        target_tf_only=target_tf_only,
+                        ngrnas_per_target=ngrnas_per_target,
+                        ncells_in_experiment=ncells_in_experiment,
+                        ncells_to_sample=ncells_to_sample,
+                        experiment_type=experiment_type,
+                        grna_to_ctrl_ratio=grna_to_ctrl_ratio,
+                        ctrl_label=ctrl_label,
+                        cache_dir=cache_dir)
+    
+    return (expr_params)
 }

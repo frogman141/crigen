@@ -25,5 +25,5 @@ localhost:${port}  (prefix w/ https:// if using password)
 " > jupyter_notebook_info.txt
 
 # load modules or conda environments here
-source activate tidyscreen
+source activate perturbverse
 jupyter lab --no-browser --port=${port} --ip=${node} --notebook-dir=../

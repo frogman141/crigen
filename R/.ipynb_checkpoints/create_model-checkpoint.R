@@ -1,110 +1,117 @@
 #' @export
-create_models <- function(crigen_obj, ctrl_label='CTRL', cache_dir='../data') {
+create_models <- function(crigen_obj) {
     # generating individual ko models for a given target genes grna
-    crigen_obj <- setup(crigen_obj, ctrl_label, cache_dir)
-    crigen_obj <- fetch_metadata(crigen_obj)
-    crigen_obj <- create_crispr_models(crigen_obj)
-    
-    return (crigen_obj)
-}
-
-setup <- function(crigen_obj, ctrl_label, cache_dir) {
-    crigen_obj$models <- list()
-    crigen_obj$cache_dir <- cache_dir
-    crigen_obj$ctrl_label <- ctrl_label
-    crigen_obj$models[[ctrl_label]] <- crigen_obj$common_model
-    
+    crigen_obj <- crigen_obj %>% fetch_metadata() %>% create_crispr_models()
     return (crigen_obj)
 }
 
 fetch_metadata <- function(crigen_obj) {
-    crigen_obj$dyngen_meta <- crigen_obj$grna_meta %>%
-                            group_by(grna) %>%
-                            do(bind_rows(create_dyngen_meta(.data, crigen_obj$cache_dir)))
     
+    grna_meta <- crigen_obj$experiment_meta$grna_meta
+    cache_dir <- crigen_obj$experiment_params$cache_dir
+    dyngen_meta <- grna_meta %>%
+                        group_by(grna) %>%
+                        do(bind_rows(create_dyngen_meta(.data, cache_dir)))
+    crigen_obj$experiment_meta$dyngen_meta <- bind_rows(crigen_obj$experiment_meta$dyngen_meta, dyngen_meta)
     return(crigen_obj)
 }
 
 create_crispr_models <- function (crigen_obj) {
-    nsims <- nrow(crigen_obj$common_model$simulation_params$experiment_params)
+    nsims <- crigen_obj$simulator_params$num_simulations
+    dyngen_meta <- crigen_obj$experiment_meta$dyngen_meta
     
-    for(row_i in 1:nrow(crigen_obj$dyngen_meta)) {
-        dyngen_model <- crigen_obj$common_model
-        dyngen_crispr_meta <- crigen_obj$dyngen_meta[row_i, ]
-        sim_df <- duplicate_grnas(dyngen_crispr_meta, nsims)
+    for(row_i in 1:nrow(dyngen_meta)) {
+        dyngen_row <- dyngen_meta[row_i, ]
+        sim_df <- duplicate_grnas(dyngen_row, nsims)
         
         expr_params <- simulation_type_knockdown(genes = sim_df$genes,
                                                  num_genes = sim_df$num_genes,
                                                  num_simulations = nsims,
                                                  multiplier = sim_df$kd_multiplier)
-
+        
+        # adding caching filepaths to the dyngen model
+        dyngen_model <- crigen_obj$simulator_models$common_model
+        dyngen_model$model_meta <- dyngen_row
+        
+        # adding experiment parameters to simulate knockdown
         dyngen_model$simulation_params$experiment_params <- expr_params
-        crigen_obj$models[[dyngen_kd_meta$model_name]] <- dyngen_model
+        crigen_obj$simulator_models$models[[dyngen_row$model_name]] <- dyngen_model
     }
     
     return (crigen_obj)
 }
 
-create_dyngen_meta <- function(meta, cache_dir) {
+create_dyngen_meta <- function(grna_meta, cache_dir) {
     # creating metadata for dyngen knock down models. This function works on grna level. As such
     # the metadata provided must grouped by unique grna.
-    experiment_type <- unique(meta$experiment_type)
+    experiment_type <- unique(grna_meta$experiment_type)
+    grna_name <- unique(grna_meta$grna)
     
-    if (experiment_type == 'KO'){
-        dyngen_meta <- create_knockout_meta(meta)
+    if (toupper(experiment_type) == 'KO'){
+        dyngen_meta <- create_knockout_meta(grna_meta)
     } else {
-        dyngen_meta <- create_interfernce_or_activation_meta(meta)
+        dyngen_meta <- create_other_expr_meta(grna_meta)
     }
     
-    dyngen_meta <- add_cache_info(dyngen_meta)
+    dyngen_meta <- add_cache_info(dyngen_meta, grna_name, cache_dir)
     return (dyngen_meta)
 }
 
-create_knockout_meta <- function(meta) {
+create_knockout_meta <- function(grna_meta) {
     # create the metadata for simulated crispr knockout experiments
      # generate KD Multiplier matrix. If KO Matrix will be Multiplier rows if interference matrix will have 1 row.
-    grna_name <- unique(meta$grna)
-    ko_combos <- knockout_combinations(meta$gene)
-    model_names <- name_ko_models(grna_name, ko_combos)
-    sample_percentages <- calc_sample_percentages(ko_combos, meta$on_target)
+    grna_name <- unique(grna_meta$grna)
+    off_target_count <- unique(grna_meta$off_target_count)
+    grna_to_ctrl_ratio <- unique(grna_meta$grna_to_ctrl_ratio)
     
-    meta <- data.frame(model_name = model_names,
-                       sample_percentage = sample_percentages) %>%
-                rowwise %>%
-                mutate(genes = list(meta$gene),
-                       num_genes = length(meta$gene),
-                       kd_multiplier = list(ko_combos[model_name, ]))
+    if (off_target_count == 0) {
+        meta <- data.frame(model_name = grna_name, sample_percentage = grna_to_ctrl_ratio) %>%
+                    mutate(genes = list(grna_meta$gene),
+                           num_genes = length(grna_meta$gene),
+                           kd_multiplier = list(0))
+    } else {
+        ko_combos <- knockout_combinations(grna_meta$gene)
+        model_names <- name_ko_models(grna_name, ko_combos)
+        sample_percentages <- calc_sample_percentages(ko_combos, grna_meta$on_target)
+        rownames(ko_combos) <- model_names
+        
+        meta <- data.frame(model_name = model_names, sample_percentage = (sample_percentages * grna_to_ctrl_ratio)) %>%
+                    rowwise %>%
+                    mutate(genes = list(grna_meta$gene),
+                           num_genes = length(grna_meta$gene),
+                           kd_multiplier = kd_multiplier_to_list(model_name, ko_combos))
+    }
     
     return (meta)
 }
 
-create_interfernce_or_activation_meta <- function(meta) {
+create_other_expr_meta <- function(grna_meta) {
     # create the metadata for simulated crispr interference and activation experiments
-    grna_name <- unique(meta$grna)
+    grna_name <- unique(grna_meta$grna)
+    grna_to_ctrl_ratio <- unique(grna_meta$grna_to_ctrl_ratio)
     
-    meta <- data.frame(model_name = grna_name,
-                       sample_percentage = 1,
-                       genes = NA) %>%
-                mutate(genes = list(meta$gene),
-                       num_genes = length(meta$gene),
-                       kd_multiplier = list(meta$on_target))
+    meta <- data.frame(model_name = grna_name, sample_percentage = grna_to_ctrl_ratio) %>%
+                mutate(genes = list(grna_meta$gene),
+                       num_genes = length(grna_meta$gene),
+                       kd_multiplier = list(grna_meta$on_target))
     
     return (meta)
 }
 
-add_cache_info <- function(meta) {
+add_cache_info <- function(meta, grna_name, cache_dir) {
     # adding cache directory and file paths to simulator metadata
     meta <- meta %>% 
                 rowwise %>%
-                mutate(model_dir = file.path(cache_dir, model_name),
-                       sim_fp = file.path(cache_dir, paste0(model_name, '.Rds')),
-                       sce_fp = file.path(cahce_dir,  paste0(model_name, '_sce.Rds')))
+                mutate(model_dir = file.path(cache_dir, grna_name),
+                       sim_fp = file.path(model_dir, paste0(model_name, '.Rds')),
+                       sce_fp = file.path(model_dir,  paste0(model_name, '_sce.Rds')))
 
     return (meta)
 }
 
 knockout_combinations <- function(perturbed_genes) {
     # generating all of the potiential combinations of KO effects for a given gRNA
+    # THERE IS AN ISSUE HERE BECAUSE WHEN YOU ONLY HAVE 1 GENE YOU get a weird bug
     combinations <- list()
 
     for (gene in perturbed_genes){
@@ -163,6 +170,17 @@ name_ko_models <- function(grna, ko_combos) {
     }
     
     return (model_names)
+}
+
+kd_multiplier_to_list <- function(row_name, df){
+    row_values <- c()
+    row <- df[row_name, ]
+    
+    for (col in colnames(row)){
+        row_values <- c(row_values, row[, col])
+    }
+    
+    return (list(row_values))
 }
 
 duplicate_grnas <- function(dat, sim_count_per_grnas){
