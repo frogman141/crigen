@@ -19,6 +19,11 @@ sample_off_target_count = function(library) {
         num_off_targets <- 0
     } else if (library == 'default'){
         num_off_targets <- rpois(1, lambda=1)
+    } else if (library %in% colnames(grna_lib_meta)){
+        num_off_targets <- sample_off_target_dist(grna_lib_meta[[library]]$pdf_off)
+    } else {
+        message("Specified Library is currently not covered by crigen...")
+        exit()
     }
     
     return (num_off_targets)
@@ -36,4 +41,9 @@ select_off_target_genes <- function (genes, num_off_target) {
     off_target_genes <- sample(genes, num_off_target)
     
     return (off_target_genes)
+}
+
+sample_off_target_dist <- function(pdf) {
+    off_target <- sample(pdf$mismatch_up_to_2, size = 1, prob = pdf$prob)
+    return (off_target)
 }

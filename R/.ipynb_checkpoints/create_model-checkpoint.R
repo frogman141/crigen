@@ -12,6 +12,7 @@ fetch_metadata <- function(crigen_obj) {
     dyngen_meta <- grna_meta %>%
                         group_by(grna) %>%
                         do(bind_rows(create_dyngen_meta(.data, cache_dir)))
+    
     crigen_obj$experiment_meta$dyngen_meta <- bind_rows(crigen_obj$experiment_meta$dyngen_meta, dyngen_meta)
     return(crigen_obj)
 }

@@ -11,13 +11,19 @@ on_target <- function(perturb_genes, num_of_genes, library='default', experiment
 }
 
 sample_on_target_activity <- function(num_of_genes, library) {
+    grna_lib_meta <- readRDS('../metadata/grna_libraries_meta.Rds')
     
     # generate randomized on target if specified
     if(library == 'perfect') {
         on_target <- rep(1, num_of_genes)
     } else if (library == 'default') {
         on_target <- runif(num_of_genes)
-    } 
+    } else if (library %in% colnames(grna_lib_meta)){
+        on_target <- sample_on_target_dist(grna_lib_meta[[library]]$on_pdf)
+    } else {
+        message("Specified Library is currently not covered by crigen...")
+        exit()
+    }
     
     # converting on_target score into a KD multiplier Dyngen acccepts
     on_target = 1 - on_target
@@ -64,4 +70,11 @@ calc_ko_sample_percentages <- function(on_target, ko_combinations){
 
     sample_percentages = rowProds(as.matrix(probs_mat))
     return (sample_percentages)
+}
+
+sample_on_target_dist <- function(pdf) {
+    on_target <- sample(pdf$fusi_score, size = 1, prob = pdf$prob)
+    on_target <- on_target / 100
+    
+    return (on_target)
 }

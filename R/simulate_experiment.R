@@ -75,7 +75,7 @@ run_dyngen <- function(dyngen_model) {
                                                model = model_name,
                                                target_gene = target_gene,
                                                cell_population = gsub('^.|.$', '', from))
-        print (cell_meta)
+        
         sim_model$experiment$cell_info <- cell_meta
         return (sim_model)
     }
