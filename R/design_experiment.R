@@ -39,7 +39,8 @@ design_experiment <- function(
     cellpop_params <- config_cellpop_params(ncellpops, edge_probs, ntfs_per_cellpop)
     
     simulator_params <- config_simulator_params(nhk, negenes, nsimulations,
-                                                ntfs_per_cellpop, ncells_per_model, census_interval, tau)
+                                                ntfs_per_cellpop, ncells_per_model,
+                                                census_interval, tau)
     
     experiment_params <- config_experiment_params(ntargets, target_tf_only, grna_library,
                                                   ngrnas_per_target, ncells_in_experiment,

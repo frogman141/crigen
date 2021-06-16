@@ -1,6 +1,5 @@
 #' @export
 on_target <- function(perturb_genes, num_of_genes, library='default', experiment_type='KO'){
-    
     on_target_activity <- sample_on_target_activity(num_of_genes, library)
     
     if (experiment_type == 'Activation') {
