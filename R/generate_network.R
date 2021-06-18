@@ -1,6 +1,6 @@
 # generate cell populations for simulation
-#' @export
-create_cellpops <- function(npops=1, edge_prob=0.2, min_mod=10, max_mod=20) {
+
+old_create_cellpops <- function(npops=1, edge_prob=0.2, min_mod=10, max_mod=20) {
     n_cellpops <- 1:npops
     cellpop_names <- paste0('CellPop', n_cellpops, '_')
     
