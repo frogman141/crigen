@@ -1,0 +1,20 @@
+[I 2021-06-17 09:01:20.118 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-17 09:01:20.523 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-17 09:01:20.579 LabApp] JupyterLab extension loaded from /home/baker02/miniconda3/envs/perturbverse/lib/python3.9/site-packages/jupyterlab
+[I 2021-06-17 09:01:20.580 LabApp] JupyterLab application directory is /home/baker02/miniconda3/envs/perturbverse/share/jupyter/lab
+[I 2021-06-17 09:01:20.584 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-17 09:01:20.593 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-17 09:01:20.598 ServerApp] Serving notebooks from local directory: /mnt/scratcha/fmlab/baker02/crigen
+[I 2021-06-17 09:01:20.598 ServerApp] Jupyter Server 1.4.1 is running at:
+[I 2021-06-17 09:01:20.599 ServerApp] http://clust1-node-1:9999/lab
+[I 2021-06-17 09:01:20.599 ServerApp]  or http://127.0.0.1:9999/lab
+[I 2021-06-17 09:01:20.599 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2021-06-17 09:03:02.088 ServerApp] 302 GET / (10.20.236.34) 0.82ms
+[I 2021-06-17 09:03:02.191 LabApp] 302 GET /lab? (10.20.236.34) 1.87ms
+[I 2021-06-17 09:03:07.827 ServerApp] 302 POST /login?next=%2Flab%3F (10.20.236.34) 2.37ms
+[W 2021-06-17 09:03:13.923 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2021-06-17 09:03:25.827 ServerApp] 404 GET /api/contents/notebooks/improving_markov_sim.ipynb?content=0&1623917005770 (10.20.236.34): No such file or directory: notebooks/improving_markov_sim.ipynb
+[W 2021-06-17 09:03:25.827 ServerApp] No such file or directory: notebooks/improving_markov_sim.ipynb
+[W 2021-06-17 09:03:25.828 ServerApp] 404 GET /api/contents/notebooks/improving_markov_sim.ipynb?content=0&1623917005770 (10.20.236.34) 3.33ms referer=http://localhost:9999/lab?
+[W 2021-06-17 10:21:08.798 LabApp] Could not determine jupyterlab build status without nodejs
+slurmstepd: error: *** JOB 14018517 ON clust1-node-1 CANCELLED AT 2021-06-18T09:01:31 DUE TO TIME LIMIT ***

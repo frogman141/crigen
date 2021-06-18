@@ -1,0 +1,196 @@
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+Loading required package: dyno
+Loading required package: dynfeature
+Loading required package: dynguidelines
+Loading required package: dynmethods
+Loading required package: dynplot
+Loading required package: dynwrap
+Loading required package: scran
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: scuttle
+Loading required package: scater
+Loading required package: ggplot2
+Loading required package: slurmR
+slurmR default option for `tmp_path` (used to store auxiliar files) set to:
+  /mnt/scratcha/fmlab/baker02/crigen/scripts
+You can change this and checkout other slurmR options using: ?opts_slurmR, or you could just type "opts_slurmR" on the terminal.
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following object is masked from ‘package:scater’:
+
+    normalize
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    union
+
+The following object is masked from ‘package:IRanges’:
+
+    union
+
+The following object is masked from ‘package:S4Vectors’:
+
+    union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    normalize, path, union
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Loading required package: dyngen
+Loading required package: dynutils
+Loading required package: tidyverse
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
+✔ tibble  3.1.2     ✔ dplyr   1.0.6
+✔ tidyr   1.1.3     ✔ stringr 1.4.0
+✔ readr   1.4.0     ✔ forcats 0.5.1
+✔ purrr   0.3.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::as_data_frame() masks tibble::as_data_frame(), igraph::as_data_frame()
+✖ dplyr::collapse()      masks IRanges::collapse()
+✖ dplyr::combine()       masks Biobase::combine(), BiocGenerics::combine()
+✖ purrr::compose()       masks igraph::compose()
+✖ dplyr::count()         masks matrixStats::count()
+✖ tidyr::crossing()      masks igraph::crossing()
+✖ dplyr::desc()          masks IRanges::desc()
+✖ tidyr::expand()        masks S4Vectors::expand()
+✖ dplyr::filter()        masks stats::filter()
+✖ dplyr::first()         masks S4Vectors::first()
+✖ dplyr::groups()        masks igraph::groups()
+✖ dplyr::lag()           masks stats::lag()
+✖ ggplot2::Position()    masks BiocGenerics::Position(), base::Position()
+✖ purrr::reduce()        masks GenomicRanges::reduce(), IRanges::reduce()
+✖ dplyr::rename()        masks S4Vectors::rename()
+✖ purrr::simplify()      masks igraph::simplify()
+✖ dplyr::slice()         masks IRanges::slice()
+Loading required package: assertthat
+
+Attaching package: ‘assertthat’
+
+The following object is masked from ‘package:tibble’:
+
+    has_name
+
+Loading required package: data.table
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:purrr’:
+
+    transpose
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    shift
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    shift
+
+The following object is masked from ‘package:IRanges’:
+
+    shift
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, second
+
+Error in config_experiment_params(ntargets, target_tf_only, grna_library,  : 
+  gRNA Library Specified is Currently Not Supported by Crigen...
+Calls: %>% ... create_experiment -> design_experiment -> config_experiment_params
+Execution halted

@@ -18,7 +18,7 @@ library(crigen)
 test_obj_fp = 'test_crigen.Rds'
 
 if(!file.exists(test_obj_fp)) {
-    crg <- design_experiment(, grna_to_ctrl_ratio=0.3, nhk=500, negenes=500) %>% create_experiment()
+    crg <- design_experiment(, grna_library='brunello', grna_to_ctrl_ratio=0.3, nhk=500, negenes=500) %>% create_experiment()
     saveRDS(crg, test_obj_fp)
 } else {
     crg <- readRDS(test_obj_fp)
