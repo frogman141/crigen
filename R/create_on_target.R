@@ -10,7 +10,6 @@ on_target <- function(perturb_genes, num_of_genes, library='default', experiment
 }
 
 sample_on_target_activity <- function(num_of_genes, library) {
-    grna_lib_meta <- readRDS('../metadata/grna_libraries_meta.Rds')
     
     # generate randomized on target if specified
     if(library == 'perfect') {

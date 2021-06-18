@@ -2,6 +2,7 @@
 create_experiment <- function(crigen_obj){
     # Configuring Dyngen
     crigen_obj$experiment_meta = list()
+    load(file = '../metadata/grna_libraries_meta.Rdata')
     
     crigen_obj <- crigen_obj %>%
                         create_cellpops() %>%
