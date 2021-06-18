@@ -12,6 +12,7 @@ sample_off_target_count = function(library) {
     # off-target probability mass functions. The default option is to sample
     # a Poisson Distribution with lambda of 1.
     num_off_targets <- 0
+    grna_lib_meta <- readRDS('../metadata/grna_libraries_meta.Rds')   
     
     # sampling from the library distribution. Poisson with lambda=1 is the 
     # default distribution to sample from.
