@@ -21,7 +21,7 @@ This package installs from this repository with devtools, but first we need to i
 
 ### Simulate a knock out experiment
 
-Generate 10000 cells (ncells_in_experiment) from 1 cell population (ncellpops) with 1 of 5 transcription factors knocked out per cell (ntfs_per_cellpop), 500 downstream genes attached to each transcription factor, simulated from a network of 9000 housekeeping genes (nhk), and run 2 simulations (nsimulations).  
+Generate 10000 cells (ncells_in_experiment) from 1 cell population (ncellpops) with 1 of 5 transcription factors knocked out per cell (ntfs_per_cellpop), 500 downstream genes attached to each transcription factor, simulated from a network of 9000 housekeeping genes (nhk), and run 2 simulations per TODO (nsimulations).  
 
 ```
 library(crigen)
@@ -52,14 +52,9 @@ Network simulation parameters
     ncells_per_model=1000, # TODO -- is this calculated from the number of cells?
     census_interval=10, # dyngen parameter, time interval
     tau=100/3600,         # dyngen parameter
-
-
-
-
-            #
     ntargets=sum(ntfs_per_cellpop), # number of targets
     ncells_in_experiment=10000, # number of cells
-    target_tf_only=TRUE, # as opposed to being housekeeping or egenes
+    target_tf_only=TRUE, # only allow edges between tf to housekeeping or egenes, nodes in tf network, as opposed to being housekeeping or egenes
     grna_library='default', # uniform distribution for on target; poisson for off target **Alex**
     experiment_type='ko',             # ('ko', ‘interference’, ‘activation’)
     ctrl_label='CTRL',
