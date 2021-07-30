@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=jobde9bcb35781f6b7e7645dd8b17d98a3f
+#SBATCH --output=/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_133004-Iy1B6d/batchtools_395555762/logs/jobde9bcb35781f6b7e7645dd8b17d98a3f.log
+#SBATCH --error=/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_133004-Iy1B6d/batchtools_395555762/logs/jobde9bcb35781f6b7e7645dd8b17d98a3f.log
+#SBATCH --time=24:00:00
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=2G
+
+
+0 -e 'batchtools::doJobCollection("/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_133004-Iy1B6d/batchtools_395555762/jobs/jobde9bcb35781f6b7e7645dd8b17d98a3f.rds")'

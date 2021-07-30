@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --job-name=job0c66c51dbd26cb639ef2704099c9981c
+#SBATCH --output=/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_115244-ffQVNo/batchtools_1350517266/logs/job0c66c51dbd26cb639ef2704099c9981c.log
+#SBATCH --error=/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_115244-ffQVNo/batchtools_1350517266/logs/job0c66c51dbd26cb639ef2704099c9981c.log
+#SBATCH --time=24:00:00
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=2G
+
+
+export DEBUGME=
+source activate perturbverse
+0 -e 'batchtools::doJobCollection("/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_115244-ffQVNo/batchtools_1350517266/jobs/job0c66c51dbd26cb639ef2704099c9981c.rds")'

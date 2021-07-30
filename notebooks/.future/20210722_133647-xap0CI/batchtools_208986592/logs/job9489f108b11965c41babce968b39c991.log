@@ -1,0 +1,66 @@
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+### [bt]: This is batchtools v0.9.15
+### [bt]: Starting calculation of 1 jobs
+### [bt]: Setting working directory to '/mnt/scratcha/fmlab/baker02/crigen/notebooks'
+Loading required package: purrr
+Loading required package: tibble
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: tidyr
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following object is masked from ‘package:tidyr’:
+
+    crossing
+
+The following objects are masked from ‘package:dplyr’:
+
+    as_data_frame, groups, union
+
+The following object is masked from ‘package:tibble’:
+
+    as_data_frame
+
+The following objects are masked from ‘package:purrr’:
+
+    compose, simplify
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Loading required package: future
+
+Attaching package: ‘future’
+
+The following objects are masked from ‘package:igraph’:
+
+    %->%, %<-%
+
+### [bt]: Memory measurement disabled
+### [bt]: Starting job [batchtools job.id=1]
+### [bt]: Setting seed to 3666 ...
+Compling Reactions...
+
+### [bt]: Job terminated successfully [batchtools job.id=1]
+### [bt]: Calculation finished!

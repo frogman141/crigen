@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=job9cb03311e64fb7d4497f21e65ff475ed
+#SBATCH --output=/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_134457-zPbEXR/batchtools_803130459/logs/job9cb03311e64fb7d4497f21e65ff475ed.log
+#SBATCH --error=/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_134457-zPbEXR/batchtools_803130459/logs/job9cb03311e64fb7d4497f21e65ff475ed.log
+#SBATCH --time=24:00:00
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=2G
+
+
+/home/baker02/miniconda3/envs/perturbverse/bin/Rscript -e "batchtools::doJobCollection(/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210721_134457-zPbEXR/batchtools_803130459/jobs/job9cb03311e64fb7d4497f21e65ff475ed.rds)"
