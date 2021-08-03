@@ -1,4 +1,25 @@
 #' @export
+precompile_reactions <- function(model) {
+    # fetch paraneters and settings
+    sim_system <- model$simulation_system
+    reactions <- sim_system$reactions 
+    state_ids <- names(sim_system$initial_state)
+    buffer_ids <- unique(unlist(map(reactions, "buffer_ids")))
+    parameters <- extract_parameters(model$feature_info, model$feature_network) %>% deframe()
+    
+    # compile prop funs
+    comp_funs <- GillespieSSA2::compile_reactions(reactions = reactions,
+                                                  buffer_ids = buffer_ids,
+                                                  state_ids = state_ids,
+                                                  params = parameters,
+                                                  hardcode_params = FALSE,
+                                                  fun_by = 1000L)
+    
+    model$simulation_system$compiled_reactions <- comp_funs
+    return (model)
+}
+
+#' @export
 burn_phase <- function(model, sim, params) {
     sim_system <- model$simulation_system
     
@@ -11,13 +32,15 @@ burn_phase <- function(model, sim, params) {
     sim_system$initial_perturb_state <- burn_out$counts[nrow(burn_out$counts),]
     
     if (sim_system$keep_burn) {
+        burn_out$meta$crispr_type <- model$crispr_param$crispr_type
         model$simulation$burn <- burn_out
     }
     
     model$simulation_system <- sim_system
+    
     return (model)
 }
-
+     
 #' @export
 perturb_phase <- function(model, sim, params) {
     sim_system <- model$simulation_system
@@ -30,13 +53,15 @@ perturb_phase <- function(model, sim, params) {
     sim_system$initial_sampling_state <- perturb_out$counts[nrow(perturb_out$counts),]
     
     if (sim_system$keep_perturb) {
+        perturb_out$meta$crispr_type <- model$crispr_param$crispr_type
         model$simulation$perturb <- perturb_out
     }
     
     model$simulation_system <- sim_system
+    
     return (model)
 }
-
+ 
 #' @export
 sampling_phase <- function(model, sim, params) {
     sim_system <- model$simulation_system
@@ -46,10 +71,12 @@ sampling_phase <- function(model, sim, params) {
     initial_sampling_state <- sim_system$initial_sampling_state
     
     sampling_out <- run_gillispie(sim, 'sampling', params, sampling_time, initial_sampling_state, sim_system)
+    sampling_out$meta$crispr_type <- model$crispr_param$crispr_type
     model$simulation$sampling <- sampling_out
     
     return (model)
 }
+
 
 run_gillispie <- function(sim, phase, params, sim_time, initial_state, sim_system) {
     

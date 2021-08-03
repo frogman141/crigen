@@ -1,0 +1,100 @@
+[I 2021-08-03 13:59:36.125 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-08-03 13:59:36.539 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-08-03 13:59:36.612 LabApp] JupyterLab extension loaded from /home/baker02/miniconda3/envs/perturbverse/lib/python3.9/site-packages/jupyterlab
+[I 2021-08-03 13:59:36.612 LabApp] JupyterLab application directory is /home/baker02/miniconda3/envs/perturbverse/share/jupyter/lab
+[I 2021-08-03 13:59:36.619 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-08-03 13:59:36.632 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-08-03 13:59:36.641 ServerApp] Serving notebooks from local directory: /mnt/scratcha/fmlab/baker02/crigen
+[I 2021-08-03 13:59:36.641 ServerApp] Jupyter Server 1.4.1 is running at:
+[I 2021-08-03 13:59:36.641 ServerApp] http://clust1-node-6:8467/lab
+[I 2021-08-03 13:59:36.641 ServerApp]  or http://127.0.0.1:8467/lab
+[I 2021-08-03 13:59:36.641 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2021-08-03 13:59:48.282 ServerApp] 302 GET / (10.20.236.34) 1.03ms
+[I 2021-08-03 13:59:48.312 LabApp] 302 GET /lab? (10.20.236.34) 1.31ms
+[I 2021-08-03 13:59:53.275 ServerApp] 302 POST /login?next=%2Flab%3F (10.20.236.34) 2.29ms
+[W 2021-08-03 13:59:59.424 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-08-03 14:00:03.023 ServerApp] Kernel started: 16d16939-07bc-48db-9793-ad11321480d1
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:00:03.254 ServerApp] Kernel started: c5323592-55dc-42d6-8fd2-5e4c96f12389
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:01:02.813 ServerApp] Saving file at /R/create_grnas.R
+[I 2021-08-03 14:02:02.596 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:02:04.898 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:02:16.600 ServerApp] Kernel interrupted: c5323592-55dc-42d6-8fd2-5e4c96f12389
+[I 2021-08-03 14:02:46.244 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:02:51.427 ServerApp] Kernel restarted: c5323592-55dc-42d6-8fd2-5e4c96f12389
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:03:05.188 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:04:26.747 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:04:34.044 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:05:53.552 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:05:57.353 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:07:21.144 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:07:27.375 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:09:30.311 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:09:51.618 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:10:26.085 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:10:36.255 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:10:42.341 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:11:10.017 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:11:11.271 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:11:22.317 ServerApp] Saving file at /R/create_grnas.R
+[I 2021-08-03 14:11:37.112 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:11:45.455 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:11:57.175 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-03 14:13:19.789 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:13:36.980 ServerApp] Kernel restarted: 16d16939-07bc-48db-9793-ad11321480d1
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:14:12.315 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:14:24.857 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:14:26.279 ServerApp] Kernel interrupted: 16d16939-07bc-48db-9793-ad11321480d1
+[I 2021-08-03 14:14:28.919 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:16:29.112 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:17:30.559 ServerApp] Kernel restarted: 16d16939-07bc-48db-9793-ad11321480d1
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:18:19.396 ServerApp] Saving file at /R/create_grnas.R
+[I 2021-08-03 14:18:29.310 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:20:29.500 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:22:29.688 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:23:00.036 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:23:53.568 ServerApp] Kernel restarted: 16d16939-07bc-48db-9793-ad11321480d1
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:24:58.596 ServerApp] Kernel restarted: 16d16939-07bc-48db-9793-ad11321480d1
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:25:35.350 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:26:22.322 ServerApp] Kernel restarted: 16d16939-07bc-48db-9793-ad11321480d1
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-03 14:26:29.289 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-03 14:28:29.573 ServerApp] Saving file at /notebooks/testing_refactor.ipynb

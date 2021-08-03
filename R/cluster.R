@@ -1,5 +1,5 @@
 #' @export
-setup_cluster <- function (cluster, default_resources) {
+setup_cluster <- function (cluster, template, default_resources) {
     if (cluster == 'local') {
         default_resources$mem <- default_resources$njobs <- default_resources$walltime <- NULL
         default_resources$ncpus <- parallel::detectCores() - 1

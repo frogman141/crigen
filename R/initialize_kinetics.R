@@ -277,6 +277,7 @@ sample_rate_kinetics <- function(feature_info) {
     return (feature_info)
 }
 
+#' @importFrom dyngen rnorm_bounded
 sample_interaction_kinetics <- function(feature_network) {
     # this function needs to worked on so there is at least one condition where a TF is expressed
     feature_network <- feature_network %>%

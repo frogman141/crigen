@@ -58,7 +58,7 @@ initialize_simulation_params <- function(model, noise_mean, noise_sd, nsims_per_
     
     default_resources <- list(ncpus=ncpus, njobs=length(sim_names), memory=mem, walltime=time, rscript=rscript)
     
-    setup_cluster(cluster, default_resources)
+    setup_cluster(cluster, template, default_resources)
     
     sim_system$tau <- tau
     sim_system$cluster <- cluster
@@ -122,8 +122,6 @@ merge_simulations <- function(model, simulation) {
     
     kinetics_parameters <- extract_simulation_results(simulation, 'kinetics', FALSE)
     sim_system$kinetics_parameters <- kinetics_parameters %>% bind_rows()
-    
-    print(sim)
     
     model$simulation <- sim
     model$simulation_system <- sim_system

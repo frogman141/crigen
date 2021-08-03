@@ -137,30 +137,37 @@ sample_molecules <- function(tsim_counts_cpm, lib_size_new) {
 
 sample_cells <- function(model, ncells, ncells_per_grna) {
     # need to add a test to make sure i have enough simulations to sample from
-    sim_meta <- model$simulation$sampling$meta %>% as.data.frame
+    sim_meta <- model$sim_meta
+    meta <- model$simulation$sampling$meta
     
     if (!is.na(ncells)) {
-        cell_info <- sampling_cells(sim_meta, ncells)
+        cell_info <- sampling_cells(meta, ncells, sim_meta)
     }
 
     if (!is.na(ncells_per_grna)) {
-        cell_info <- sampling_cells_per_grna(sim_meta, ncells_per_grna)
+        cell_info <- sampling_cells_per_grna(model, meta, ncells_per_grna)
     }
     
     cell_info <-  cell_info %>%
-                      mutate(cell_id = paste0("cell", row_number())) %>% 
-                      select(cell_id, step_ix, target_gene, grna, sim_name, phase, time)
+                      mutate(target_perturbed = TRUE, cell_id = paste0("cell", row_number())) %>%
+                      rowwise %>% 
+                      mutate(target_perturbed=ifelse(crispr_type != 'Knockout', TRUE, 
+                                              ifelse(grepl(paste0(target_gene, '_PRT'), sim_name), TRUE, FALSE))) %>%
+                      select(cell_id, step_ix, target_gene, target_perturbed, grna, sim_name, phase, time) %>%
+                      as.data.frame
 
     return (cell_info)
 }
 
-sampling_cells <- function(sim_meta, num_cells) {
+sampling_cells <- function(meta, num_cells, sim_meta) {
     sampled_cells <- NULL
-    step_ixs <- sim_meta %>% pull(step_ix)
+    step_ixs <- meta %>% pull(step_ix)
+    crispr_type <- unique(meta$crispr_type)
     
+    # sample individual cells
     for (row_i in 1:num_cells) {
             sampled_ix <- sample(step_ixs, size=1)
-            row <- sim_meta %>% filter(step_ix == sampled_ix)
+            row <- meta %>% filter(step_ix == sampled_ix)
             
             if (row_i == 1) {
                 sampled_cells <- row
@@ -173,15 +180,22 @@ sampling_cells <- function(sim_meta, num_cells) {
     return (sampled_cells)
 }
 
-sampling_cells_per_grna <- function(sim_meta, ncells_per_grna) {
+sampling_cells_per_grna <- function(model, meta, ncells_per_grna) {
+    sim_meta <- model$sim_meta
     grna_sampled_cells <- list()
-    grnas <- unique(sim_meta$grna)
-    
-    for (grna_name in grnas) {
-        grna_meta <- sim_meta %>% filter(grna == grna_name)
-        grna_sampled_cells[[grna_name]] <- sampling_cells(grna_meta, ncells_per_grna)
+    sims <- unique(sim_meta$sim_name)
+
+    for (sim in sims) {
+        grna_meta <- meta %>% filter(grepl(sim, sim_name))
+        
+        if (model$crispr_param$crispr_type == 'Knockout') {
+            perc <- sim_meta %>% filter(sim_name == sim) %>% pull(sample_percentage)
+            ncells <- ceiling(ncells_per_grna * perc)
+        }
+        
+        grna_sampled_cells[[sim]] <- sampling_cells(grna_meta, ncells, sim_meta)
     }
     
-    grna_sampled_cells <- bind_rows(grna_sampled_cells)
+    grna_sampled_cells <- grna_sampled_cells %>% bind_rows()
     return (grna_sampled_cells)
 }
