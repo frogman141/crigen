@@ -1,4 +1,5 @@
 #' @export
+# add ctrl grnas to the datasets
 create_grnas <- function(model,
                          ntargets=NA,
                          on_target=NA,

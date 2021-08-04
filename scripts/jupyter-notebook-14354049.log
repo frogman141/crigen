@@ -1,0 +1,113 @@
+[I 2021-08-04 09:49:22.038 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-08-04 09:49:26.068 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-08-04 09:49:26.354 LabApp] JupyterLab extension loaded from /home/baker02/miniconda3/envs/perturbverse/lib/python3.9/site-packages/jupyterlab
+[I 2021-08-04 09:49:26.354 LabApp] JupyterLab application directory is /home/baker02/miniconda3/envs/perturbverse/share/jupyter/lab
+[I 2021-08-04 09:49:26.358 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-08-04 09:49:26.393 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-08-04 09:49:26.397 ServerApp] Serving notebooks from local directory: /mnt/scratcha/fmlab/baker02/crigen
+[I 2021-08-04 09:49:26.397 ServerApp] Jupyter Server 1.4.1 is running at:
+[I 2021-08-04 09:49:26.397 ServerApp] http://clust1-node-7:9315/lab
+[I 2021-08-04 09:49:26.397 ServerApp]  or http://127.0.0.1:9315/lab
+[I 2021-08-04 09:49:26.397 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2021-08-04 10:01:55.860 ServerApp] 302 GET / (10.20.236.34) 0.59ms
+[I 2021-08-04 10:01:55.867 LabApp] 302 GET /lab? (10.20.236.34) 0.70ms
+[I 2021-08-04 10:02:00.199 ServerApp] 302 POST /login?next=%2Flab%3F (10.20.236.34) 1.08ms
+[W 2021-08-04 10:02:03.656 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-08-04 10:03:38.086 ServerApp] Kernel started: 9fcaa2ec-ec16-4fb2-9093-f94f567279e8
+[I 2021-08-04 10:03:38.108 ServerApp] Kernel started: c2ff87da-a5c9-4a17-a2a1-f3d24f5040de
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-04 10:10:07.574 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:10:54.775 ServerApp] Kernel restarted: 9fcaa2ec-ec16-4fb2-9093-f94f567279e8
+[I 2021-08-04 10:10:54.786 ServerApp] Starting buffering for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+[I 2021-08-04 10:10:54.793 ServerApp] Restoring connection for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-04 10:12:10.255 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:14:10.393 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:17:38.982 ServerApp] Kernel restarted: 9fcaa2ec-ec16-4fb2-9093-f94f567279e8
+[I 2021-08-04 10:17:38.999 ServerApp] Starting buffering for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+[I 2021-08-04 10:17:39.006 ServerApp] Restoring connection for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-04 10:18:12.164 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:20:12.572 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:21:06.645 ServerApp] Kernel restarted: c2ff87da-a5c9-4a17-a2a1-f3d24f5040de
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-04 10:21:36.974 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-04 10:22:14.884 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:23:37.542 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-04 10:24:20.473 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-04 10:25:25.753 ServerApp] Saving file at /notebooks/refactor_crigen.ipynb
+[I 2021-08-04 10:26:12.461 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:26:15.357 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:26:16.981 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:28:46.904 ServerApp] Kernel restarted: 9fcaa2ec-ec16-4fb2-9093-f94f567279e8
+[I 2021-08-04 10:28:46.918 ServerApp] Starting buffering for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+[I 2021-08-04 10:28:46.931 ServerApp] Restoring connection for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-04 10:28:54.816 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:29:58.482 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:31:58.590 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:33:08.758 ServerApp] Saving file at /R/create_grnas.R
+[I 2021-08-04 10:34:47.200 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:34:59.537 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:35:24.159 ServerApp] Saving file at /R/simulation_utils.R
+[I 2021-08-04 10:35:27.362 ServerApp] Saving file at /R/simulation_utils.R
+[I 2021-08-04 10:35:40.753 ServerApp] Saving file at /R/simulation_utils.R
+[I 2021-08-04 10:35:54.693 ServerApp] Saving file at /R/simulation_utils.R
+[I 2021-08-04 10:36:07.141 ServerApp] Saving file at /R/simulation_utils.R
+There were 41 warnings (use warnings() to see them)
+[I 2021-08-04 10:37:22.694 ServerApp] Kernel restarted: 9fcaa2ec-ec16-4fb2-9093-f94f567279e8
+[I 2021-08-04 10:37:22.702 ServerApp] Starting buffering for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+[I 2021-08-04 10:37:22.709 ServerApp] Restoring connection for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-04 10:38:01.698 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:40:03.411 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:41:30.871 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:41:52.096 ServerApp] Saving file at /R/initialize_kinetics.R
+[I 2021-08-04 10:42:24.728 ServerApp] Creating new file in /R
+[I 2021-08-04 10:43:03.905 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:43:07.564 ServerApp] Saving file at /R/initialize_kinetics.R
+[I 2021-08-04 10:43:13.268 ServerApp] Saving file at /R/initialize_kinetics.R
+[I 2021-08-04 10:43:38.970 ServerApp] Saving file at /R/simulation_utils.R
+[I 2021-08-04 10:43:58.652 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:44:32.175 ServerApp] Saving file at /R/create_experiment.R
+[I 2021-08-04 10:45:18.962 ServerApp] Saving file at /R/run_simulation.R
+[I 2021-08-04 10:46:19.213 ServerApp] Kernel restarted: 9fcaa2ec-ec16-4fb2-9093-f94f567279e8
+[I 2021-08-04 10:46:19.230 ServerApp] Starting buffering for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+[I 2021-08-04 10:46:19.240 ServerApp] Restoring connection for 9fcaa2ec-ec16-4fb2-9093-f94f567279e8:44681b20-ef00-4fab-ba29-fa7df6e49a17
+[I 2021-08-04 10:48:05.325 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
+[I 2021-08-04 10:50:01.347 ServerApp] Saving file at /R/create_experiment.R
+[I 2021-08-04 10:50:03.164 ServerApp] Saving file at /notebooks/testing_refactor.ipynb
