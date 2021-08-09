@@ -1,0 +1,586 @@
+
+   File /Users/baker02/.Renviron contains invalid line(s)
+      p_TpE3coAkixZazRvxL8JA7fTyuhni0Z0Je12X1
+   They were ignored
+
+### [bt]: This is batchtools v0.9.15
+### [bt]: Starting calculation of 1 jobs
+### [bt]: Setting working directory to '/mnt/scratcha/fmlab/baker02/crigen/notebooks'
+Loading required package: stringr
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: future
+Loading required package: tibble
+Loading required package: tidyr
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following object is masked from ‘package:tidyr’:
+
+    crossing
+
+The following object is masked from ‘package:tibble’:
+
+    as_data_frame
+
+The following objects are masked from ‘package:future’:
+
+    %->%, %<-%
+
+The following objects are masked from ‘package:dplyr’:
+
+    as_data_frame, groups, union
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Loading required package: purrr
+
+Attaching package: ‘purrr’
+
+The following objects are masked from ‘package:igraph’:
+
+    compose, simplify
+
+Loading required package: GillespieSSA2
+### [bt]: Memory measurement disabled
+### [bt]: Starting job [batchtools job.id=1]
+### [bt]: Setting seed to 14252 ...
+TF5-grna.1-sim.1
+*** Error in `/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/R': corrupted double-linked list: 0x000055fa28e84010 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7f3e4)[0x7f9557f503e4]
+/lib64/libc.so.6(+0x82ba8)[0x7f9557f53ba8]
+/lib64/libc.so.6(__libc_malloc+0x4c)[0x7f9557f566fc]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_allocVector3+0x7f6)[0x7f9558437b06]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x2002a2)[0x7f955849f2a2]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x737)[0x7f95583f6d37]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15816f)[0x7f95583f716f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x628)[0x7f95583f6c28]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x11cb7e)[0x7f95583bbb7e]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1410a1)[0x7f95583e00a1]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x80)[0x7f95583f6680]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x145644)[0x7f95583e4644]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x80)[0x7f95583f6680]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x145644)[0x7f95583e4644]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x80)[0x7f95583f6680]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x2a1)[0x7f95583f68a1]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15816f)[0x7f95583f716f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x38f)[0x7f95583f698f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15816f)[0x7f95583f716f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x158620)[0x7f95583f7620]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x142d41)[0x7f95583e1d41]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x80)[0x7f95583f6680]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x2a1)[0x7f95583f68a1]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15816f)[0x7f95583f716f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x38f)[0x7f95583f698f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15816f)[0x7f95583f716f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x38f)[0x7f95583f698f]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x224880)[0x7f95584c3880]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x5a9)[0x7f95583f6ba9]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15c934)[0x7f95583fb934]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x5a9)[0x7f95583f6ba9]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15b327)[0x7f95583fa327]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x5a9)[0x7f95583f6ba9]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x2a1)[0x7f95583f68a1]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/library/magrittr/libs/magrittr.so(magrittr_pipe+0x3f9)[0x7f95529029a9]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0xfdb00)[0x7f955839cb00]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x13d574)[0x7f95583dc574]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x80)[0x7f95583f6680]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x145644)[0x7f95583e4644]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x80)[0x7f95583f6680]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x2a1)[0x7f95583f68a1]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x15b327)[0x7f95583fa327]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x5a9)[0x7f95583f6ba9]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x1595d0)[0x7f95583f85d0]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_applyClosure+0x1a4)[0x7f95583f94d4]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x2a1)[0x7f95583f68a1]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0xc981e)[0x7f955836881e]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(+0x13d574)[0x7f95583dc574]
+/home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/../../lib/libR.so(Rf_eval+0x80)[0x7f95583f6680]
+======= Memory map: ========
+55fa1c97a000-55fa1c97b000 r--p 00000000 00:2a 30542692708                /home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/R
+55fa1c97b000-55fa1c97c000 r-xp 00001000 00:2a 30542692708                /home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/R
+55fa1c97c000-55fa1c97d000 r--p 00002000 00:2a 30542692708                /home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/R
+55fa1c97d000-55fa1c97e000 r--p 00002000 00:2a 30542692708                /home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/R
+55fa1c97e000-55fa1c97f000 rw-p 00003000 00:2a 30542692708                /home/baker02/miniconda3/envs/perturbverse/lib/R/bin/exec/R
+55fa1d262000-55fa2e5a2000 rw-p 00000000 00:00 0                          [heap]
+7f93f8000000-7f93f8021000 rw-p 00000000 00:00 0 
+7f93f8021000-7f93fc000000 ---p 00000000 00:00 0 
+7f93fc6b4000-7f94006b4000 rw-p 00000000 00:00 0 
+7f94006b4000-7f94006b8000 r--p 00000000 00:2a 68825781696                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utils/libs/utils.so
+7f94006b8000-7f94006c0000 r-xp 00004000 00:2a 68825781696                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utils/libs/utils.so
+7f94006c0000-7f94006c2000 r--p 0000c000 00:2a 68825781696                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utils/libs/utils.so
+7f94006c2000-7f94006c3000 ---p 0000e000 00:2a 68825781696                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utils/libs/utils.so
+7f94006c3000-7f94006c4000 r--p 0000e000 00:2a 68825781696                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utils/libs/utils.so
+7f94006c4000-7f94006c5000 rw-p 0000f000 00:2a 68825781696                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utils/libs/utils.so
+7f94006c5000-7f94006c6000 rw-p 00000000 00:00 0 
+7f9400a9c000-7f9400b83000 rw-p 00000000 00:00 0 
+7f9400c4f000-7f9400d91000 rw-p 00000000 00:00 0 
+7f9400d91000-7f9400d94000 r--p 00000000 00:2a 60143874032                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/methods/libs/methods.so
+7f9400d94000-7f9400d99000 r-xp 00003000 00:2a 60143874032                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/methods/libs/methods.so
+7f9400d99000-7f9400d9b000 r--p 00008000 00:2a 60143874032                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/methods/libs/methods.so
+7f9400d9b000-7f9400d9c000 ---p 0000a000 00:2a 60143874032                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/methods/libs/methods.so
+7f9400d9c000-7f9400d9d000 r--p 0000a000 00:2a 60143874032                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/methods/libs/methods.so
+7f9400d9d000-7f9400d9e000 rw-p 0000b000 00:2a 60143874032                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/methods/libs/methods.so
+7f9400e4c000-7f9408e4c000 rw-p 00000000 00:00 0 
+7f9408e4c000-7f9408f50000 rw-p 00000000 00:00 0 
+7f9408f50000-7f9438f50000 rw-p 00000000 00:00 0 
+7f9438f50000-7f94393a4000 rw-p 00000000 00:00 0 
+7f94393a4000-7f94413a4000 rw-p 00000000 00:00 0 
+7f94413a4000-7f94478e7000 r--p 00000000 fd:00 1451418                    /usr/lib/locale/locale-archive
+7f94478e7000-7f945f8e7000 rw-p 00000000 00:00 0 
+7f945f8e7000-7f945f8e8000 ---p 00000000 00:00 0 
+7f945f8e8000-7f94600e8000 rw-p 00000000 00:00 0 
+7f94600e8000-7f94600e9000 ---p 00000000 00:00 0 
+7f94600e9000-7f94608e9000 rw-p 00000000 00:00 0 
+7f94608e9000-7f94608ea000 ---p 00000000 00:00 0 
+7f94608ea000-7f94610ea000 rw-p 00000000 00:00 0 
+7f94610ea000-7f94610eb000 ---p 00000000 00:00 0 
+7f94610eb000-7f94618eb000 rw-p 00000000 00:00 0 
+7f9462595000-7f9462d9a000 r--s 00000000 fd:02 262240                     /var/lib/sss/mc/passwd
+7f9462d9a000-7f94648f1000 r--s 00000000 00:2a 73111242962                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stringi/libs/icudt69l.dat
+7f94648f1000-7f946c8f1000 rw-p 00000000 00:00 0 
+7f946d0f2000-7f94750f2000 rw-p 00000000 00:00 0 
+7f94758f3000-7f947d8f3000 rw-p 00000000 00:00 0 
+7f947e0f4000-7f94860f4000 rw-p 00000000 00:00 0 
+7f94868f5000-7f948e8f5000 rw-p 00000000 00:00 0 
+7f948f0f6000-7f94970f6000 rw-p 00000000 00:00 0 
+7f94978f7000-7f949f8f7000 rw-p 00000000 00:00 0 
+7f94a00f8000-7f94a80f8000 rw-p 00000000 00:00 0 
+7f94a88f9000-7f94b08f9000 rw-p 00000000 00:00 0 
+7f94b10fa000-7f94b90fa000 rw-p 00000000 00:00 0 
+7f94b98fb000-7f94c18fb000 rw-p 00000000 00:00 0 
+7f94c20fc000-7f94ca0fc000 rw-p 00000000 00:00 0 
+7f94ca8fd000-7f94d28fd000 rw-p 00000000 00:00 0 
+7f94d30fe000-7f94db0fe000 rw-p 00000000 00:00 0 
+7f94db8ff000-7f94e38ff000 rw-p 00000000 00:00 0 
+7f94e4100000-7f94ec100000 rw-p 00000000 00:00 0 
+7f94ec901000-7f94f4901000 rw-p 00000000 00:00 0 
+7f94f5102000-7f94fd102000 rw-p 00000000 00:00 0 
+7f94fd903000-7f9505903000 rw-p 00000000 00:00 0 
+7f9506104000-7f950e104000 rw-p 00000000 00:00 0 
+7f950e905000-7f9516905000 rw-p 00000000 00:00 0 
+7f9517106000-7f951f106000 rw-p 00000000 00:00 0 
+7f951f907000-7f9527907000 rw-p 00000000 00:00 0 
+7f9528108000-7f9530108000 rw-p 00000000 00:00 0 
+7f9530909000-7f9538909000 rw-p 00000000 00:00 0 
+7f953910a000-7f954110a000 rw-p 00000000 00:00 0 
+7f954117b000-7f954117f000 r--p 00000000 09:02 68550674                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_948952c0b2e8/sourceCpp_4.so (deleted)
+7f954117f000-7f9541192000 r-xp 00004000 09:02 68550674                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_948952c0b2e8/sourceCpp_4.so (deleted)
+7f9541192000-7f9541194000 r--p 00017000 09:02 68550674                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_948952c0b2e8/sourceCpp_4.so (deleted)
+7f9541194000-7f9541195000 ---p 00019000 09:02 68550674                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_948952c0b2e8/sourceCpp_4.so (deleted)
+7f9541195000-7f9541196000 r--p 00019000 09:02 68550674                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_948952c0b2e8/sourceCpp_4.so (deleted)
+7f9541196000-7f9541197000 rw-p 0001a000 09:02 68550674                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_948952c0b2e8/sourceCpp_4.so (deleted)
+7f9541197000-7f954119b000 r--p 00000000 09:02 68550668                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_9489352dcf9e/sourceCpp_2.so (deleted)
+7f954119b000-7f95411b1000 r-xp 00004000 09:02 68550668                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_9489352dcf9e/sourceCpp_2.so (deleted)
+7f95411b1000-7f95411b3000 r--p 0001a000 09:02 68550668                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_9489352dcf9e/sourceCpp_2.so (deleted)
+7f95411b3000-7f95411b4000 ---p 0001c000 09:02 68550668                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_9489352dcf9e/sourceCpp_2.so (deleted)
+7f95411b4000-7f95411b5000 r--p 0001c000 09:02 68550668                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_9489352dcf9e/sourceCpp_2.so (deleted)
+7f95411b5000-7f95411b6000 rw-p 0001d000 09:02 68550668                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_9489352dcf9e/sourceCpp_2.so (deleted)
+7f95411b6000-7f95411c3000 r--p 00000000 00:2a 25603562                   /home/baker02/miniconda3/envs/perturbverse/lib/R/library/GillespieSSA2/libs/GillespieSSA2.so
+7f95411c3000-7f95411e5000 r-xp 0000d000 00:2a 25603562                   /home/baker02/miniconda3/envs/perturbverse/lib/R/library/GillespieSSA2/libs/GillespieSSA2.so
+7f95411e5000-7f95411ef000 r--p 0002f000 00:2a 25603562                   /home/baker02/miniconda3/envs/perturbverse/lib/R/library/GillespieSSA2/libs/GillespieSSA2.so
+7f95411ef000-7f95411f1000 r--p 00038000 00:2a 25603562                   /home/baker02/miniconda3/envs/perturbverse/lib/R/library/GillespieSSA2/libs/GillespieSSA2.so
+7f95411f1000-7f95411f2000 rw-p 0003a000 00:2a 25603562                   /home/baker02/miniconda3/envs/perturbverse/lib/R/library/GillespieSSA2/libs/GillespieSSA2.so
+7f95411f2000-7f95411f3000 rw-p 00000000 00:00 0 
+7f95411f3000-7f95411fe000 r--p 00000000 00:2a 48559738879                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tzdb/libs/tzdb.so
+7f95411fe000-7f954121d000 r-xp 0000b000 00:2a 48559738879                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tzdb/libs/tzdb.so
+7f954121d000-7f9541223000 r--p 0002a000 00:2a 48559738879                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tzdb/libs/tzdb.so
+7f9541223000-7f9541224000 ---p 00030000 00:2a 48559738879                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tzdb/libs/tzdb.so
+7f9541224000-7f9541225000 r--p 00030000 00:2a 48559738879                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tzdb/libs/tzdb.so
+7f9541225000-7f9541226000 rw-p 00031000 00:2a 48559738879                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tzdb/libs/tzdb.so
+7f9541226000-7f954123d000 r--p 00000000 00:2a 60144831583                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/readr/libs/readr.so
+7f954123d000-7f954129a000 r-xp 00017000 00:2a 60144831583                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/readr/libs/readr.so
+7f954129a000-7f95412a9000 r--p 00074000 00:2a 60144831583                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/readr/libs/readr.so
+7f95412a9000-7f95412ac000 r--p 00082000 00:2a 60144831583                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/readr/libs/readr.so
+7f95412ac000-7f95412ad000 rw-p 00085000 00:2a 60144831583                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/readr/libs/readr.so
+7f95412ad000-7f95412b8000 r--p 00000000 00:2a 17262508568                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/proxyC/libs/proxyC.so
+7f95412b8000-7f95412ea000 r-xp 0000b000 00:2a 17262508568                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/proxyC/libs/proxyC.so
+7f95412ea000-7f95412f2000 r--p 0003d000 00:2a 17262508568                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/proxyC/libs/proxyC.so
+7f95412f2000-7f95412f3000 ---p 00045000 00:2a 17262508568                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/proxyC/libs/proxyC.so
+7f95412f3000-7f95412f5000 r--p 00045000 00:2a 17262508568                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/proxyC/libs/proxyC.so
+7f95412f5000-7f95412f6000 rw-p 00047000 00:2a 17262508568                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/proxyC/libs/proxyC.so
+7f95412f6000-7f95415a5000 rw-p 00000000 00:00 0 
+7f95415a5000-7f9541613000 r--p 00000000 00:2a 43148559752                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/igraph/libs/igraph.so
+7f9541613000-7f954184c000 r-xp 0006e000 00:2a 43148559752                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/igraph/libs/igraph.so
+7f954184c000-7f95418fa000 r--p 002a7000 00:2a 43148559752                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/igraph/libs/igraph.so
+7f95418fa000-7f95418fb000 ---p 00355000 00:2a 43148559752                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/igraph/libs/igraph.so
+7f95418fb000-7f9541905000 r--p 00355000 00:2a 43148559752                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/igraph/libs/igraph.so
+7f9541905000-7f9541906000 rw-p 0035f000 00:2a 43148559752                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/igraph/libs/igraph.so
+7f9541906000-7f954190b000 rw-p 00000000 00:00 0 
+7f954190b000-7f954990b000 rw-p 00000000 00:00 0 
+7f9549910000-7f9549914000 r--p 00000000 09:02 68550680                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_94897db34f01/sourceCpp_6.so (deleted)
+7f9549914000-7f9549921000 r-xp 00004000 09:02 68550680                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_94897db34f01/sourceCpp_6.so (deleted)
+7f9549921000-7f9549923000 r--p 00011000 09:02 68550680                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_94897db34f01/sourceCpp_6.so (deleted)
+7f9549923000-7f9549924000 ---p 00013000 09:02 68550680                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_94897db34f01/sourceCpp_6.so (deleted)
+7f9549924000-7f9549925000 r--p 00013000 09:02 68550680                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_94897db34f01/sourceCpp_6.so (deleted)
+7f9549925000-7f9549926000 rw-p 00014000 09:02 68550680                   /tmp/RtmpoyFPge/file948964e44139/gillespie/sourceCpp-x86_64-conda-linux-gnu-1.0.7/sourcecpp_94897db34f01/sourceCpp_6.so (deleted)
+7f9549926000-7f954992c000 r--p 00000000 00:2a 4673170563                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbbmalloc.so.2
+7f954992c000-7f954993a000 r-xp 00006000 00:2a 4673170563                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbbmalloc.so.2
+7f954993a000-7f9549941000 r--p 00014000 00:2a 4673170563                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbbmalloc.so.2
+7f9549941000-7f9549942000 r--p 0001a000 00:2a 4673170563                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbbmalloc.so.2
+7f9549942000-7f9549945000 rw-p 0001b000 00:2a 4673170563                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbbmalloc.so.2
+7f9549945000-7f9549965000 rw-p 00000000 00:00 0 
+7f9549965000-7f9549974000 r--p 00000000 00:2a 4673170561                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbb.so.2
+7f9549974000-7f9549990000 r-xp 0000f000 00:2a 4673170561                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbb.so.2
+7f9549990000-7f954999d000 r--p 0002b000 00:2a 4673170561                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbb.so.2
+7f954999d000-7f954999e000 ---p 00038000 00:2a 4673170561                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbb.so.2
+7f954999e000-7f95499a0000 r--p 00038000 00:2a 4673170561                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbb.so.2
+7f95499a0000-7f95499a2000 rw-p 0003a000 00:2a 4673170561                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/lib/libtbb.so.2
+7f95499a2000-7f95499a5000 rw-p 00000000 00:00 0 
+7f95499a5000-7f95499b8000 r--p 00000000 00:2a 73111242919                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Rcpp/libs/Rcpp.so
+7f95499b8000-7f95499fa000 r-xp 00013000 00:2a 73111242919                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Rcpp/libs/Rcpp.so
+7f95499fa000-7f9549a0b000 r--p 00055000 00:2a 73111242919                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Rcpp/libs/Rcpp.so
+7f9549a0b000-7f9549a0d000 r--p 00065000 00:2a 73111242919                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Rcpp/libs/Rcpp.so
+7f9549a0d000-7f9549a0e000 rw-p 00067000 00:2a 73111242919                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Rcpp/libs/Rcpp.so
+7f9549a0e000-7f9549a15000 rw-p 00000000 00:00 0 
+7f9549a15000-7f9549a28000 r--p 00000000 00:2a 55926621035                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Matrix/libs/Matrix.so
+7f9549a28000-7f9549ad4000 r-xp 00013000 00:2a 55926621035                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Matrix/libs/Matrix.so
+7f9549ad4000-7f9549ae8000 r--p 000bf000 00:2a 55926621035                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Matrix/libs/Matrix.so
+7f9549ae8000-7f9549ae9000 ---p 000d3000 00:2a 55926621035                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Matrix/libs/Matrix.so
+7f9549ae9000-7f9549aeb000 r--p 000d3000 00:2a 55926621035                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Matrix/libs/Matrix.so
+7f9549aeb000-7f9549aed000 rw-p 000d5000 00:2a 55926621035                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/Matrix/libs/Matrix.so
+7f9549aed000-7f9549aef000 rw-p 00000000 00:00 0 
+7f9549aef000-7f954a10c000 r--s 00000000 fd:02 262173                     /var/lib/sss/mc/group
+7f954a10c000-7f955210c000 rw-p 00000000 00:00 0 
+7f9552111000-7f9552117000 r--p 00000000 00:2a 77366499026                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dynutils/libs/dynutils.so
+7f9552117000-7f9552126000 r-xp 00006000 00:2a 77366499026                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dynutils/libs/dynutils.so
+7f9552126000-7f955212a000 r--p 00015000 00:2a 77366499026                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dynutils/libs/dynutils.so
+7f955212a000-7f955212b000 r--p 00018000 00:2a 77366499026                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dynutils/libs/dynutils.so
+7f955212b000-7f955212c000 rw-p 00019000 00:2a 77366499026                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dynutils/libs/dynutils.so
+7f955212c000-7f955212e000 r--p 00000000 00:2a 38892986622                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/libs/RcppParallel.so
+7f955212e000-7f955212f000 r-xp 00002000 00:2a 38892986622                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/libs/RcppParallel.so
+7f955212f000-7f9552130000 r--p 00003000 00:2a 38892986622                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/libs/RcppParallel.so
+7f9552130000-7f9552131000 r--p 00003000 00:2a 38892986622                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/libs/RcppParallel.so
+7f9552131000-7f9552132000 rw-p 00004000 00:2a 38892986622                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/RcppParallel/libs/RcppParallel.so
+7f9552132000-7f9552133000 r--p 00000000 00:2a 43047248444                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/lattice/libs/lattice.so
+7f9552133000-7f9552135000 r-xp 00001000 00:2a 43047248444                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/lattice/libs/lattice.so
+7f9552135000-7f9552136000 r--p 00003000 00:2a 43047248444                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/lattice/libs/lattice.so
+7f9552136000-7f9552137000 r--p 00003000 00:2a 43047248444                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/lattice/libs/lattice.so
+7f9552137000-7f9552138000 rw-p 00004000 00:2a 43047248444                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/lattice/libs/lattice.so
+7f9552138000-7f955213c000 r--p 00000000 00:2a 609428521                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grid/libs/grid.so
+7f955213c000-7f9552154000 r-xp 00004000 00:2a 609428521                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grid/libs/grid.so
+7f9552154000-7f955215a000 r--p 0001c000 00:2a 609428521                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grid/libs/grid.so
+7f955215a000-7f955215b000 ---p 00022000 00:2a 609428521                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grid/libs/grid.so
+7f955215b000-7f955215c000 r--p 00022000 00:2a 609428521                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grid/libs/grid.so
+7f955215c000-7f955215d000 rw-p 00023000 00:2a 609428521                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grid/libs/grid.so
+7f955215d000-7f955218f000 r--p 00000000 00:2a 47736686071                /home/baker02/miniconda3/envs/perturbverse/lib/libxml2.so.2.9.12
+7f955218f000-7f9552270000 r-xp 00032000 00:2a 47736686071                /home/baker02/miniconda3/envs/perturbverse/lib/libxml2.so.2.9.12
+7f9552270000-7f95522ba000 r--p 00113000 00:2a 47736686071                /home/baker02/miniconda3/envs/perturbverse/lib/libxml2.so.2.9.12
+7f95522ba000-7f95522c3000 r--p 0015c000 00:2a 47736686071                /home/baker02/miniconda3/envs/perturbverse/lib/libxml2.so.2.9.12
+7f95522c3000-7f95522c4000 rw-p 00165000 00:2a 47736686071                /home/baker02/miniconda3/envs/perturbverse/lib/libxml2.so.2.9.12
+7f95522c4000-7f95522c5000 rw-p 00000000 00:00 0 
+7f95522c5000-7f95522cb000 r--p 00000000 00:2a 68874282353                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tidyr/libs/tidyr.so
+7f95522cb000-7f95522d7000 r-xp 00006000 00:2a 68874282353                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tidyr/libs/tidyr.so
+7f95522d7000-7f95522da000 r--p 00012000 00:2a 68874282353                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tidyr/libs/tidyr.so
+7f95522da000-7f95522db000 r--p 00014000 00:2a 68874282353                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tidyr/libs/tidyr.so
+7f95522db000-7f95522dc000 rw-p 00015000 00:2a 68874282353                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tidyr/libs/tidyr.so
+7f95522dc000-7f95522e1000 r--p 00000000 00:2a 68791539025                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dplyr/libs/dplyr.so
+7f95522e1000-7f95522e7000 r-xp 00005000 00:2a 68791539025                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dplyr/libs/dplyr.so
+7f95522e7000-7f95522e9000 r--p 0000b000 00:2a 68791539025                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dplyr/libs/dplyr.so
+7f95522e9000-7f95522ea000 ---p 0000d000 00:2a 68791539025                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dplyr/libs/dplyr.so
+7f95522ea000-7f95522eb000 r--p 0000d000 00:2a 68791539025                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dplyr/libs/dplyr.so
+7f95522eb000-7f95522ec000 rw-p 0000e000 00:2a 68791539025                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/dplyr/libs/dplyr.so
+7f95522ec000-7f95522ef000 r--p 00000000 00:2a 68874287211                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/purrr/libs/purrr.so
+7f95522ef000-7f95522f3000 r-xp 00003000 00:2a 68874287211                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/purrr/libs/purrr.so
+7f95522f3000-7f95522f5000 r--p 00007000 00:2a 68874287211                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/purrr/libs/purrr.so
+7f95522f5000-7f95522f6000 r--p 00008000 00:2a 68874287211                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/purrr/libs/purrr.so
+7f95522f6000-7f95522f7000 rw-p 00009000 00:2a 68874287211                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/purrr/libs/purrr.so
+7f95522f7000-7f95522f8000 r--p 00000000 00:2a 548054224                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/glue/libs/glue.so
+7f95522f8000-7f95522f9000 r-xp 00001000 00:2a 548054224                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/glue/libs/glue.so
+7f95522f9000-7f95522fa000 r--p 00002000 00:2a 548054224                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/glue/libs/glue.so
+7f95522fa000-7f95522fb000 r--p 00002000 00:2a 548054224                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/glue/libs/glue.so
+7f95522fb000-7f95522fc000 rw-p 00003000 00:2a 548054224                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/glue/libs/glue.so
+7f95522fc000-7f955230c000 rwxp 00000000 00:00 0 
+7f955230c000-7f955230e000 r--p 00000000 00:2a 23531014123                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tibble/libs/tibble.so
+7f955230e000-7f955230f000 r-xp 00002000 00:2a 23531014123                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tibble/libs/tibble.so
+7f955230f000-7f9552310000 r--p 00003000 00:2a 23531014123                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tibble/libs/tibble.so
+7f9552310000-7f9552311000 r--p 00003000 00:2a 23531014123                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tibble/libs/tibble.so
+7f9552311000-7f9552312000 rw-p 00004000 00:2a 23531014123                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tibble/libs/tibble.so
+7f9552312000-7f9552316000 r--p 00000000 00:2a 68786439349                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utf8/libs/utf8.so
+7f9552316000-7f955231f000 r-xp 00004000 00:2a 68786439349                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utf8/libs/utf8.so
+7f955231f000-7f955235e000 r--p 0000d000 00:2a 68786439349                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utf8/libs/utf8.so
+7f955235e000-7f955235f000 r--p 0004b000 00:2a 68786439349                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utf8/libs/utf8.so
+7f955235f000-7f9552360000 rw-p 0004c000 00:2a 68786439349                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/utf8/libs/utf8.so
+7f9552360000-7f9552363000 r--p 00000000 00:2a 68780550255                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fansi/libs/fansi.so
+7f9552363000-7f9552373000 r-xp 00003000 00:2a 68780550255                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fansi/libs/fansi.so
+7f9552373000-7f9552378000 r--p 00013000 00:2a 68780550255                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fansi/libs/fansi.so
+7f9552378000-7f9552379000 r--p 00017000 00:2a 68780550255                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fansi/libs/fansi.so
+7f9552379000-7f955237a000 rw-p 00018000 00:2a 68780550255                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fansi/libs/fansi.so
+7f955237a000-7f9552385000 r--p 00000000 00:2a 64828905930                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fs/libs/fs.so
+7f9552385000-7f95523a1000 r-xp 0000b000 00:2a 64828905930                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fs/libs/fs.so
+7f95523a1000-7f95523aa000 r--p 00027000 00:2a 64828905930                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fs/libs/fs.so
+7f95523aa000-7f95523ac000 r--p 0002f000 00:2a 64828905930                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fs/libs/fs.so
+7f95523ac000-7f95523ad000 rw-p 00031000 00:2a 64828905930                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/fs/libs/fs.so
+7f95523ad000-7f95523b2000 r--p 00000000 00:2a 25842880170                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/vctrs/libs/vctrs.so
+7f95523b2000-7f95523e7000 r-xp 00005000 00:2a 25842880170                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/vctrs/libs/vctrs.so
+7f95523e7000-7f95523f7000 r--p 0003a000 00:2a 25842880170                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/vctrs/libs/vctrs.so
+7f95523f7000-7f95523f9000 r--p 00049000 00:2a 25842880170                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/vctrs/libs/vctrs.so
+7f95523f9000-7f95523fa000 rw-p 0004b000 00:2a 25842880170                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/vctrs/libs/vctrs.so
+7f95523fa000-7f95524be000 rw-p 00000000 00:00 0 
+7f95524be000-7f95524c3000 r--p 00000000 00:2a 610375614                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rlang/libs/rlang.so
+7f95524c3000-7f95524d6000 r-xp 00005000 00:2a 610375614                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rlang/libs/rlang.so
+7f95524d6000-7f95524e0000 r--p 00018000 00:2a 610375614                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rlang/libs/rlang.so
+7f95524e0000-7f95524e2000 r--p 00021000 00:2a 610375614                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rlang/libs/rlang.so
+7f95524e2000-7f95524e3000 rw-p 00023000 00:2a 610375614                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rlang/libs/rlang.so
+7f95524e3000-7f95524eb000 r-xp 00000000 fd:00 1209420                    /usr/lib64/libnss_sss.so.2
+7f95524eb000-7f95526ea000 ---p 00008000 fd:00 1209420                    /usr/lib64/libnss_sss.so.2
+7f95526ea000-7f95526eb000 r--p 00007000 fd:00 1209420                    /usr/lib64/libnss_sss.so.2
+7f95526eb000-7f95526ec000 rw-p 00008000 fd:00 1209420                    /usr/lib64/libnss_sss.so.2
+7f95526ec000-7f95526f8000 r-xp 00000000 fd:00 1201636                    /usr/lib64/libnss_files-2.17.so
+7f95526f8000-7f95528f7000 ---p 0000c000 fd:00 1201636                    /usr/lib64/libnss_files-2.17.so
+7f95528f7000-7f95528f8000 r--p 0000b000 fd:00 1201636                    /usr/lib64/libnss_files-2.17.so
+7f95528f8000-7f95528f9000 rw-p 0000c000 fd:00 1201636                    /usr/lib64/libnss_files-2.17.so
+7f95528f9000-7f95528ff000 rw-p 00000000 00:00 0 
+7f9552900000-7f9552902000 r--p 00000000 00:2a 9026324291                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/magrittr/libs/magrittr.so
+7f9552902000-7f9552904000 r-xp 00002000 00:2a 9026324291                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/magrittr/libs/magrittr.so
+7f9552904000-7f9552905000 r--p 00004000 00:2a 9026324291                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/magrittr/libs/magrittr.so
+7f9552905000-7f9552906000 r--p 00004000 00:2a 9026324291                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/magrittr/libs/magrittr.so
+7f9552906000-7f9552907000 rw-p 00005000 00:2a 9026324291                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/magrittr/libs/magrittr.so
+7f9552907000-7f9552909000 r--p 00000000 00:2a 51783852194                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/parallel/libs/parallel.so
+7f9552909000-7f955290c000 r-xp 00002000 00:2a 51783852194                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/parallel/libs/parallel.so
+7f955290c000-7f955290d000 r--p 00005000 00:2a 51783852194                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/parallel/libs/parallel.so
+7f955290d000-7f955290e000 ---p 00006000 00:2a 51783852194                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/parallel/libs/parallel.so
+7f955290e000-7f955290f000 r--p 00006000 00:2a 51783852194                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/parallel/libs/parallel.so
+7f955290f000-7f9552910000 rw-p 00007000 00:2a 51783852194                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/parallel/libs/parallel.so
+7f9552910000-7f9552911000 r--p 00000000 00:2a 43126552945                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/batchtools/libs/batchtools.so
+7f9552911000-7f9552912000 r-xp 00001000 00:2a 43126552945                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/batchtools/libs/batchtools.so
+7f9552912000-7f9552913000 r--p 00002000 00:2a 43126552945                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/batchtools/libs/batchtools.so
+7f9552913000-7f9552914000 r--p 00002000 00:2a 43126552945                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/batchtools/libs/batchtools.so
+7f9552914000-7f9552915000 rw-p 00003000 00:2a 43126552945                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/batchtools/libs/batchtools.so
+7f9552915000-7f9552918000 r--p 00000000 00:2a 60143778385                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/digest/libs/digest.so
+7f9552918000-7f955292c000 r-xp 00003000 00:2a 60143778385                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/digest/libs/digest.so
+7f955292c000-7f9552937000 r--p 00017000 00:2a 60143778385                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/digest/libs/digest.so
+7f9552937000-7f9552938000 ---p 00022000 00:2a 60143778385                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/digest/libs/digest.so
+7f9552938000-7f9552939000 r--p 00022000 00:2a 60143778385                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/digest/libs/digest.so
+7f9552939000-7f955293a000 rw-p 00023000 00:2a 60143778385                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/digest/libs/digest.so
+7f955293a000-7f955293c000 rw-p 00000000 00:00 0 
+7f955293c000-7f9552acd000 r--p 00000000 00:2a 73111242959                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stringi/libs/stringi.so
+7f9552acd000-7f9552daa000 r-xp 00191000 00:2a 73111242959                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stringi/libs/stringi.so
+7f9552daa000-7f9552ed4000 r--p 0046e000 00:2a 73111242959                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stringi/libs/stringi.so
+7f9552ed4000-7f9552f03000 r--p 00597000 00:2a 73111242959                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stringi/libs/stringi.so
+7f9552f03000-7f9552f04000 rw-p 005c6000 00:2a 73111242959                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stringi/libs/stringi.so
+7f9552f04000-7f9552f07000 rw-p 00000000 00:00 0 
+7f9552f07000-7f9552f0c000 r--p 00000000 00:2a 609428519                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tools/libs/tools.so
+7f9552f0c000-7f9552f1a000 r-xp 00005000 00:2a 609428519                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tools/libs/tools.so
+7f9552f1a000-7f9552f1e000 r--p 00013000 00:2a 609428519                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tools/libs/tools.so
+7f9552f1e000-7f9552f20000 r--p 00017000 00:2a 609428519                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tools/libs/tools.so
+7f9552f20000-7f9552f21000 rw-p 00019000 00:2a 609428519                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/tools/libs/tools.so
+7f9552f21000-7f9552f2c000 r--p 00000000 00:2a 51783891742                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/data.table/libs/datatable.so
+7f9552f2c000-7f9552f83000 r-xp 0000b000 00:2a 51783891742                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/data.table/libs/datatable.so
+7f9552f83000-7f9552fa4000 r--p 00062000 00:2a 51783891742                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/data.table/libs/datatable.so
+7f9552fa4000-7f9552fa6000 r--p 00082000 00:2a 51783891742                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/data.table/libs/datatable.so
+7f9552fa6000-7f9552fa7000 rw-p 00084000 00:2a 51783891742                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/data.table/libs/datatable.so
+7f9552fa7000-7f9552fa8000 rw-p 00000000 00:00 0 
+7f9552fa8000-7f9552fac000 r--p 00000000 00:2a 4314621050                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/checkmate/libs/checkmate.so
+7f9552fac000-7f9552fb5000 r-xp 00004000 00:2a 4314621050                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/checkmate/libs/checkmate.so
+7f9552fb5000-7f9552fb9000 r--p 0000d000 00:2a 4314621050                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/checkmate/libs/checkmate.so
+7f9552fb9000-7f9552fba000 ---p 00011000 00:2a 4314621050                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/checkmate/libs/checkmate.so
+7f9552fba000-7f9552fbb000 r--p 00011000 00:2a 4314621050                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/checkmate/libs/checkmate.so
+7f9552fbb000-7f9552fbc000 rw-p 00012000 00:2a 4314621050                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/checkmate/libs/checkmate.so
+7f9552fbc000-7f9552fc8000 r--p 00000000 00:2a 9026193642                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stats/libs/stats.so
+7f9552fc8000-7f955305e000 r-xp 0000c000 00:2a 9026193642                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stats/libs/stats.so
+7f955305e000-7f9553074000 r--p 000a2000 00:2a 9026193642                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stats/libs/stats.so
+7f9553074000-7f9553075000 ---p 000b8000 00:2a 9026193642                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stats/libs/stats.so
+7f9553075000-7f9553078000 r--p 000b8000 00:2a 9026193642                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stats/libs/stats.so
+7f9553078000-7f9553079000 rw-p 000bb000 00:2a 9026193642                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/stats/libs/stats.so
+7f9553079000-7f955307d000 r--p 00000000 00:2a 4705026539                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/graphics/libs/graphics.so
+7f955307d000-7f95530bb000 r-xp 00004000 00:2a 4705026539                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/graphics/libs/graphics.so
+7f95530bb000-7f95530c4000 r--p 00042000 00:2a 4705026539                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/graphics/libs/graphics.so
+7f95530c4000-7f95530c5000 ---p 0004b000 00:2a 4705026539                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/graphics/libs/graphics.so
+7f95530c5000-7f95530c6000 r--p 0004b000 00:2a 4705026539                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/graphics/libs/graphics.so
+7f95530c6000-7f95530c7000 rw-p 0004c000 00:2a 4705026539                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/graphics/libs/graphics.so
+7f95530c7000-7f95530d5000 r--p 00000000 00:2a 73334286249                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grDevices/libs/grDevices.so
+7f95530d5000-7f95530f8000 r-xp 0000e000 00:2a 73334286249                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grDevices/libs/grDevices.so
+7f95530f8000-7f9553105000 r--p 00031000 00:2a 73334286249                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grDevices/libs/grDevices.so
+7f9553105000-7f9553106000 ---p 0003e000 00:2a 73334286249                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grDevices/libs/grDevices.so
+7f9553106000-7f955310b000 r--p 0003e000 00:2a 73334286249                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grDevices/libs/grDevices.so
+7f955310b000-7f955310d000 rw-p 00043000 00:2a 73334286249                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/grDevices/libs/grDevices.so
+7f955310d000-7f955311f000 rw-p 00000000 00:00 0 
+7f955311f000-7f9553122000 r--p 00000000 00:2a 15357544171                /home/baker02/miniconda3/envs/perturbverse/lib/libquadmath.so.0.0.0
+7f9553122000-7f9553140000 r-xp 00003000 00:2a 15357544171                /home/baker02/miniconda3/envs/perturbverse/lib/libquadmath.so.0.0.0
+7f9553140000-7f9553156000 r--p 00021000 00:2a 15357544171                /home/baker02/miniconda3/envs/perturbverse/lib/libquadmath.so.0.0.0
+7f9553156000-7f9553157000 ---p 00037000 00:2a 15357544171                /home/baker02/miniconda3/envs/perturbverse/lib/libquadmath.so.0.0.0
+7f9553157000-7f9553158000 r--p 00037000 00:2a 15357544171                /home/baker02/miniconda3/envs/perturbverse/lib/libquadmath.so.0.0.0
+7f9553158000-7f9553159000 rw-p 00038000 00:2a 15357544171                /home/baker02/miniconda3/envs/perturbverse/lib/libquadmath.so.0.0.0
+7f9553159000-7f95531fc000 r--p 00000000 00:2a 15357515708                /home/baker02/miniconda3/envs/perturbverse/lib/libstdc++.so.6.0.28
+7f95531fc000-7f955327b000 r-xp 000a3000 00:2a 15357515708                /home/baker02/miniconda3/envs/perturbverse/lib/libstdc++.so.6.0.28
+7f955327b000-7f95532bc000 r--p 00122000 00:2a 15357515708                /home/baker02/miniconda3/envs/perturbverse/lib/libstdc++.so.6.0.28
+7f95532bc000-7f95532c7000 r--p 00162000 00:2a 15357515708                /home/baker02/miniconda3/envs/perturbverse/lib/libstdc++.so.6.0.28
+7f95532c7000-7f95532cb000 rw-p 0016d000 00:2a 15357515708                /home/baker02/miniconda3/envs/perturbverse/lib/libstdc++.so.6.0.28
+7f95532cb000-7f95532ce000 rw-p 00000000 00:00 0 
+7f95532ce000-7f9554e0d000 r--p 00000000 00:2a 43115211992                /home/baker02/miniconda3/envs/perturbverse/lib/libicudata.so.68.1
+7f9554e0d000-7f9554e0e000 ---p 01b3f000 00:2a 43115211992                /home/baker02/miniconda3/envs/perturbverse/lib/libicudata.so.68.1
+7f9554e0e000-7f9554e0f000 r--p 01b3f000 00:2a 43115211992                /home/baker02/miniconda3/envs/perturbverse/lib/libicudata.so.68.1
+7f9554e0f000-7f9554e2e000 r--p 00000000 00:2a 17852451150                /home/baker02/miniconda3/envs/perturbverse/lib/libgfortran.so.5.0.0
+7f9554e2e000-7f9554f7f000 r-xp 0001f000 00:2a 17852451150                /home/baker02/miniconda3/envs/perturbverse/lib/libgfortran.so.5.0.0
+7f9554f7f000-7f9554fab000 r--p 00170000 00:2a 17852451150                /home/baker02/miniconda3/envs/perturbverse/lib/libgfortran.so.5.0.0
+7f9554fab000-7f9554fac000 ---p 0019c000 00:2a 17852451150                /home/baker02/miniconda3/envs/perturbverse/lib/libgfortran.so.5.0.0
+7f9554fac000-7f9554fad000 r--p 0019c000 00:2a 17852451150                /home/baker02/miniconda3/envs/perturbverse/lib/libgfortran.so.5.0.0
+7f9554fad000-7f9554faf000 rw-p 0019d000 00:2a 17852451150                /home/baker02/miniconda3/envs/perturbverse/lib/libgfortran.so.5.0.0
+7f9554faf000-7f955509c000 r--p 00000000 00:2a 43115211991                /home/baker02/miniconda3/envs/perturbverse/lib/libicui18n.so.68.1
+7f955509c000-7f9555226000 r-xp 000ed000 00:2a 43115211991                /home/baker02/miniconda3/envs/perturbverse/lib/libicui18n.so.68.1
+7f9555226000-7f95552a0000 r--p 00277000 00:2a 43115211991                /home/baker02/miniconda3/envs/perturbverse/lib/libicui18n.so.68.1
+7f95552a0000-7f95552a1000 ---p 002f1000 00:2a 43115211991                /home/baker02/miniconda3/envs/perturbverse/lib/libicui18n.so.68.1
+7f95552a1000-7f95552b1000 r--p 002f1000 00:2a 43115211991                /home/baker02/miniconda3/envs/perturbverse/lib/libicui18n.so.68.1
+7f95552b1000-7f95552b2000 rw-p 00301000 00:2a 43115211991                /home/baker02/miniconda3/envs/perturbverse/lib/libicui18n.so.68.1
+7f95552b2000-7f95552b3000 rw-p 00000000 00:00 0 
+7f95552b3000-7f955531a000 r--p 00000000 00:2a 43115211990                /home/baker02/miniconda3/envs/perturbverse/lib/libicuuc.so.68.1
+7f955531a000-7f9555406000 r-xp 00067000 00:2a 43115211990                /home/baker02/miniconda3/envs/perturbverse/lib/libicuuc.so.68.1
+7f9555406000-7f9555487000 r--p 00153000 00:2a 43115211990                /home/baker02/miniconda3/envs/perturbverse/lib/libicuuc.so.68.1
+7f9555487000-7f955549a000 r--p 001d3000 00:2a 43115211990                /home/baker02/miniconda3/envs/perturbverse/lib/libicuuc.so.68.1
+7f955549a000-7f955549b000 rw-p 001e6000 00:2a 43115211990                /home/baker02/miniconda3/envs/perturbverse/lib/libicuuc.so.68.1
+7f955549b000-7f955549d000 rw-p 00000000 00:00 0 
+7f955549d000-7f95554a0000 r--p 00000000 00:2a 13429457989                /home/baker02/miniconda3/envs/perturbverse/lib/libiconv.so.2.6.1
+7f95554a0000-7f95554b4000 r-xp 00003000 00:2a 13429457989                /home/baker02/miniconda3/envs/perturbverse/lib/libiconv.so.2.6.1
+7f95554b4000-7f9555580000 r--p 00017000 00:2a 13429457989                /home/baker02/miniconda3/envs/perturbverse/lib/libiconv.so.2.6.1
+7f9555580000-7f9555582000 r--p 000e2000 00:2a 13429457989                /home/baker02/miniconda3/envs/perturbverse/lib/libiconv.so.2.6.1
+7f9555582000-7f9555583000 rw-p 000e4000 00:2a 13429457989                /home/baker02/miniconda3/envs/perturbverse/lib/libiconv.so.2.6.1
+7f9555583000-7f9555585000 r-xp 00000000 fd:00 1201632                    /usr/lib64/libdl-2.17.so
+7f9555585000-7f9555785000 ---p 00002000 fd:00 1201632                    /usr/lib64/libdl-2.17.so
+7f9555785000-7f9555786000 r--p 00002000 fd:00 1201632                    /usr/lib64/libdl-2.17.so
+7f9555786000-7f9555787000 rw-p 00003000 fd:00 1201632                    /usr/lib64/libdl-2.17.so
+7f9555787000-7f955578e000 r-xp 00000000 fd:00 1201639                    /usr/lib64/librt-2.17.so
+7f955578e000-7f955598d000 ---p 00007000 fd:00 1201639                    /usr/lib64/librt-2.17.so
+7f955598d000-7f955598e000 r--p 00006000 fd:00 1201639                    /usr/lib64/librt-2.17.so
+7f955598e000-7f955598f000 rw-p 00007000 fd:00 1201639                    /usr/lib64/librt-2.17.so
+7f955598f000-7f95559a6000 r-xp 00000000 fd:00 1178545                    /usr/lib64/libpthread-2.17.so
+7f95559a6000-7f9555ba5000 ---p 00017000 fd:00 1178545                    /usr/lib64/libpthread-2.17.so
+7f9555ba5000-7f9555ba6000 r--p 00016000 fd:00 1178545                    /usr/lib64/libpthread-2.17.so
+7f9555ba6000-7f9555ba7000 rw-p 00017000 fd:00 1178545                    /usr/lib64/libpthread-2.17.so
+7f9555ba7000-7f9555bab000 rw-p 00000000 00:00 0 
+7f9555bab000-7f9555cac000 r-xp 00000000 fd:00 1201633                    /usr/lib64/libm-2.17.so
+7f9555cac000-7f9555eab000 ---p 00101000 fd:00 1201633                    /usr/lib64/libm-2.17.so
+7f9555eab000-7f9555eac000 r--p 00100000 fd:00 1201633                    /usr/lib64/libm-2.17.so
+7f9555eac000-7f9555ead000 rw-p 00101000 fd:00 1201633                    /usr/lib64/libm-2.17.so
+7f9555ead000-7f9555fa6000 r--p 00000000 00:2a 17852668589                /home/baker02/miniconda3/envs/perturbverse/lib/libopenblasp-r0.3.15.so
+7f9555fa6000-7f9555fa7000 r-xp 000f9000 00:2a 17852668589                /home/baker02/miniconda3/envs/perturbverse/lib/libopenblasp-r0.3.15.so
+7f9555fa7000-7f9555fad000 ---p 000fa000 00:2a 17852668589                /home/baker02/miniconda3/envs/perturbverse/lib/libopenblasp-r0.3.15.so
+7f9555fad000-7f9557cde000 r-xp 00100000 00:2a 17852668589                /home/baker02/miniconda3/envs/perturbverse/lib/libopenblasp-r0.3.15.so
+7f9557cde000-7f9557ea4000 r--p 01e31000 00:2a 17852668589                /home/baker02/miniconda3/envs/perturbverse/lib/libopenblasp-r0.3.15.so
+7f9557ea4000-7f9557eb2000 r--p 01ff6000 00:2a 17852668589                /home/baker02/miniconda3/envs/perturbverse/lib/libopenblasp-r0.3.15.so
+7f9557eb2000-7f9557ec0000 rw-p 02004000 00:2a 17852668589                /home/baker02/miniconda3/envs/perturbverse/lib/libopenblasp-r0.3.15.so
+7f9557ec0000-7f9557ed1000 rw-p 00000000 00:00 0 
+7f9557ed1000-7f9558094000 r-xp 00000000 fd:00 1178519                    /usr/lib64/libc-2.17.so
+7f9558094000-7f9558294000 ---p 001c3000 fd:00 1178519                    /usr/lib64/libc-2.17.so
+7f9558294000-7f9558298000 r--p 001c3000 fd:00 1178519                    /usr/lib64/libc-2.17.so
+7f9558298000-7f955829a000 rw-p 001c7000 fd:00 1178519                    /usr/lib64/libc-2.17.so
+7f955829a000-7f955829f000 rw-p 00000000 00:00 0 
+7f955829f000-7f955830c000 r--p 00000000 00:2a 15371835926                /home/baker02/miniconda3/envs/perturbverse/lib/R/lib/libR.so
+7f955830c000-7f9558541000 r-xp 0006d000 00:2a 15371835926                /home/baker02/miniconda3/envs/perturbverse/lib/R/lib/libR.so
+7f9558541000-7f95585e9000 r--p 002a2000 00:2a 15371835926                /home/baker02/miniconda3/envs/perturbverse/lib/R/lib/libR.so
+7f95585e9000-7f95585ea000 ---p 0034a000 00:2a 15371835926                /home/baker02/miniconda3/envs/perturbverse/lib/R/lib/libR.so
+7f95585ea000-7f955860a000 r--p 0034a000 00:2a 15371835926                /home/baker02/miniconda3/envs/perturbverse/lib/R/lib/libR.so
+7f955860a000-7f9558617000 rw-p 0036a000 00:2a 15371835926                /home/baker02/miniconda3/envs/perturbverse/lib/R/lib/libR.so
+7f9558617000-7f955877c000 rw-p 00000000 00:00 0 
+7f955877c000-7f955879e000 r-xp 00000000 fd:00 1178946                    /usr/lib64/ld-2.17.so
+7f955879e000-7f955879f000 r--p 00000000 00:2a 34626369124                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rappdirs/libs/rappdirs.so
+7f955879f000-7f95587a0000 r-xp 00001000 00:2a 34626369124                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rappdirs/libs/rappdirs.so
+7f95587a0000-7f95587a1000 r--p 00002000 00:2a 34626369124                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rappdirs/libs/rappdirs.so
+7f95587a1000-7f95587a2000 r--p 00002000 00:2a 34626369124                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rappdirs/libs/rappdirs.so
+7f95587a2000-7f95587a3000 rw-p 00003000 00:2a 34626369124                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/rappdirs/libs/rappdirs.so
+7f95587a3000-7f95587a5000 r--p 00000000 00:2a 25845527779                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/ellipsis/libs/ellipsis.so
+7f95587a5000-7f95587a6000 r-xp 00002000 00:2a 25845527779                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/ellipsis/libs/ellipsis.so
+7f95587a6000-7f95587a7000 r--p 00003000 00:2a 25845527779                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/ellipsis/libs/ellipsis.so
+7f95587a7000-7f95587a8000 r--p 00003000 00:2a 25845527779                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/ellipsis/libs/ellipsis.so
+7f95587a8000-7f95587a9000 rw-p 00004000 00:2a 25845527779                /home/baker02/miniconda3/envs/perturbverse/lib/R/library/ellipsis/libs/ellipsis.so
+7f95587a9000-7f95587ad000 rw-p 00000000 00:00 0 
+7f95587ad000-7f95587b0000 r--p 00000000 00:2a 15357544179                /home/baker02/miniconda3/envs/perturbverse/lib/libgcc_s.so.1
+7f95587b0000-7f95587bc000 r-xp 00003000 00:2a 15357544179                /home/baker02/miniconda3/envs/perturbverse/lib/libgcc_s.so.1
+7f95587bc000-7f95587bf000 r--p 0000f000 00:2a 15357544179                /home/baker02/miniconda3/envs/perturbverse/lib/libgcc_s.so.1
+7f95587bf000-7f95587c0000 r--p 00011000 00:2a 15357544179                /home/baker02/miniconda3/envs/perturbverse/lib/libgcc_s.so.1
+7f95587c0000-7f95587c1000 rw-p 00012000 00:2a 15357544179                /home/baker02/miniconda3/envs/perturbverse/lib/libgcc_s.so.1
+7f95587c1000-7f95587c2000 rw-p 00000000 00:00 0 
+7f95587c2000-7f95587d2000 r--p 00000000 00:2a 30565387481                /home/baker02/miniconda3/envs/perturbverse/lib/libtinfo.so.6.2
+7f95587d2000-7f95587ea000 r-xp 00010000 00:2a 30565387481                /home/baker02/miniconda3/envs/perturbverse/lib/libtinfo.so.6.2
+7f95587ea000-7f95587fb000 r--p 00028000 00:2a 30565387481                /home/baker02/miniconda3/envs/perturbverse/lib/libtinfo.so.6.2
+7f95587fb000-7f95587ff000 r--p 00038000 00:2a 30565387481                /home/baker02/miniconda3/envs/perturbverse/lib/libtinfo.so.6.2
+7f95587ff000-7f9558800000 rw-p 0003c000 00:2a 30565387481                /home/baker02/miniconda3/envs/perturbverse/lib/libtinfo.so.6.2
+7f9558800000-7f9558803000 rw-p 00000000 00:00 0 
+7f9558803000-7f9558806000 r--p 00000000 00:2a 21517539077                /home/baker02/miniconda3/envs/perturbverse/lib/libz.so.1.2.11
+7f9558806000-7f9558814000 r-xp 00003000 00:2a 21517539077                /home/baker02/miniconda3/envs/perturbverse/lib/libz.so.1.2.11
+7f9558814000-7f955881a000 r--p 00011000 00:2a 21517539077                /home/baker02/miniconda3/envs/perturbverse/lib/libz.so.1.2.11
+7f955881a000-7f955881b000 ---p 00017000 00:2a 21517539077                /home/baker02/miniconda3/envs/perturbverse/lib/libz.so.1.2.11
+7f955881b000-7f955881c000 r--p 00017000 00:2a 21517539077                /home/baker02/miniconda3/envs/perturbverse/lib/libz.so.1.2.11
+7f955881c000-7f955881d000 rw-p 00018000 00:2a 21517539077                /home/baker02/miniconda3/envs/perturbverse/lib/libz.so.1.2.11
+7f955881d000-7f955881f000 r--p 00000000 00:2a 39022991806                /home/baker02/miniconda3/envs/perturbverse/lib/libbz2.so.1.0.8
+7f955881f000-7f955882d000 r-xp 00002000 00:2a 39022991806                /home/baker02/miniconda3/envs/perturbverse/lib/libbz2.so.1.0.8
+7f955882d000-7f955882f000 r--p 00010000 00:2a 39022991806                /home/baker02/miniconda3/envs/perturbverse/lib/libbz2.so.1.0.8
+7f955882f000-7f9558830000 r--p 00011000 00:2a 39022991806                /home/baker02/miniconda3/envs/perturbverse/lib/libbz2.so.1.0.8
+7f9558830000-7f9558831000 rw-p 00012000 00:2a 39022991806                /home/baker02/miniconda3/envs/perturbverse/lib/libbz2.so.1.0.8
+7f9558831000-7f9558832000 rw-p 00000000 00:00 0 
+7f9558832000-7f9558836000 r--p 00000000 00:2a 26057311789                /home/baker02/miniconda3/envs/perturbverse/lib/liblzma.so.5.2.5
+7f9558836000-7f955884d000 r-xp 00004000 00:2a 26057311789                /home/baker02/miniconda3/envs/perturbverse/lib/liblzma.so.5.2.5
+7f955884d000-7f9558858000 r--p 0001b000 00:2a 26057311789                /home/baker02/miniconda3/envs/perturbverse/lib/liblzma.so.5.2.5
+7f9558858000-7f9558859000 ---p 00026000 00:2a 26057311789                /home/baker02/miniconda3/envs/perturbverse/lib/liblzma.so.5.2.5
+7f9558859000-7f955885a000 r--p 00026000 00:2a 26057311789                /home/baker02/miniconda3/envs/perturbverse/lib/liblzma.so.5.2.5
+7f955885a000-7f955885b000 rw-p 00027000 00:2a 26057311789                /home/baker02/miniconda3/envs/perturbverse/lib/liblzma.so.5.2.5
+7f955885b000-7f955885f000 r--p 00000000 00:2a 17852451162                /home/baker02/miniconda3/envs/perturbverse/lib/libpcre2-8.so.0.10.1
+7f955885f000-7f95588d4000 r-xp 00004000 00:2a 17852451162                /home/baker02/miniconda3/envs/perturbverse/lib/libpcre2-8.so.0.10.1
+7f95588d4000-7f95588fd000 r--p 00079000 00:2a 17852451162                /home/baker02/miniconda3/envs/perturbverse/lib/libpcre2-8.so.0.10.1
+7f95588fd000-7f95588fe000 ---p 000a2000 00:2a 17852451162                /home/baker02/miniconda3/envs/perturbverse/lib/libpcre2-8.so.0.10.1
+7f95588fe000-7f95588ff000 r--p 000a2000 00:2a 17852451162                /home/baker02/miniconda3/envs/perturbverse/lib/libpcre2-8.so.0.10.1
+7f95588ff000-7f9558900000 rw-p 000a3000 00:2a 17852451162                /home/baker02/miniconda3/envs/perturbverse/lib/libpcre2-8.so.0.10.1
+7f9558900000-7f9558918000 r--p 00000000 00:2a 15359229530                /home/baker02/miniconda3/envs/perturbverse/lib/libreadline.so.8.1
+7f9558918000-7f9558942000 r-xp 00018000 00:2a 15359229530                /home/baker02/miniconda3/envs/perturbverse/lib/libreadline.so.8.1
+7f9558942000-7f955894c000 r--p 00042000 00:2a 15359229530                /home/baker02/miniconda3/envs/perturbverse/lib/libreadline.so.8.1
+7f955894c000-7f955894f000 r--p 0004b000 00:2a 15359229530                /home/baker02/miniconda3/envs/perturbverse/lib/libreadline.so.8.1
+7f955894f000-7f9558955000 rw-p 0004e000 00:2a 15359229530                /home/baker02/miniconda3/envs/perturbverse/lib/libreadline.so.8.1
+7f9558955000-7f9558957000 rw-p 00000000 00:00 0 
+7f9558957000-7f9558961000 r--p 00000000 00:2a 844179697                  /home/baker02/miniconda3/envs/perturbverse/lib/libgomp.so.1.0.0
+7f9558961000-7f9558978000 r-xp 0000a000 00:2a 844179697                  /home/baker02/miniconda3/envs/perturbverse/lib/libgomp.so.1.0.0
+7f9558978000-7f9558981000 r--p 00021000 00:2a 844179697                  /home/baker02/miniconda3/envs/perturbverse/lib/libgomp.so.1.0.0
+7f9558981000-7f9558982000 ---p 0002a000 00:2a 844179697                  /home/baker02/miniconda3/envs/perturbverse/lib/libgomp.so.1.0.0
+7f9558982000-7f9558983000 r--p 0002a000 00:2a 844179697                  /home/baker02/miniconda3/envs/perturbverse/lib/libgomp.so.1.0.0
+7f9558983000-7f9558984000 rw-p 0002b000 00:2a 844179697                  /home/baker02/miniconda3/envs/perturbverse/lib/libgomp.so.1.0.0
+7f9558984000-7f9558986000 rw-p 00000000 00:00 0 
+7f9558986000-7f9558987000 r--p 00000000 00:2a 266102369                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/base64url/libs/base64url.so
+7f9558987000-7f9558988000 r-xp 00001000 00:2a 266102369                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/base64url/libs/base64url.so
+7f9558988000-7f9558989000 r--p 00002000 00:2a 266102369                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/base64url/libs/base64url.so
+7f9558989000-7f955898a000 r--p 00002000 00:2a 266102369                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/base64url/libs/base64url.so
+7f955898a000-7f955898b000 rw-p 00003000 00:2a 266102369                  /home/baker02/miniconda3/envs/perturbverse/lib/R/library/base64url/libs/base64url.so
+7f955898b000-7f955898c000 r--p 00000000 00:2a 9026163026                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/backports/libs/backports.so
+7f955898c000-7f955898d000 r-xp 00001000 00:2a 9026163026                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/backports/libs/backports.so
+7f955898d000-7f955898e000 r--p 00002000 00:2a 9026163026                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/backports/libs/backports.so
+7f955898e000-7f955898f000 r--p 00002000 00:2a 9026163026                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/backports/libs/backports.so
+7f955898f000-7f9558990000 rw-p 00003000 00:2a 9026163026                 /home/baker02/miniconda3/envs/perturbverse/lib/R/library/backports/libs/backports.so
+7f9558990000-7f9558997000 r--s 00000000 fd:00 1178823                    /usr/lib64/gconv/gconv-modules.cache
+7f9558998000-7f955899d000 rw-p 00000000 00:00 0 
+7f955899d000-7f955899e000 r--p 00021000 fd:00 1178946                    /usr/lib64/ld-2.17.so
+7f955899e000-7f955899f000 rw-p 00022000 fd:00 1178946                    /usr/lib64/ld-2.17.so
+7f955899f000-7f95589a0000 rw-p 00000000 00:00 0 
+7ffe65fbd000-7ffe660eb000 rw-p 00000000 00:00 0                          [stack]
+7ffe66177000-7ffe66179000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+/var/tmp/slurmd.spool/job14373915/slurm_script: line 11: 38025 Aborted                 "/home/baker02/miniconda3/envs/perturbverse/bin/Rscript" -e 'batchtools::doJobCollection("/mnt/scratcha/fmlab/baker02/crigen/notebooks/.future/20210809_134404-tiKLSW/batchtools_487649945/jobs/job1a4a2ae4bdb13ec6c37981cc21d39aae.rds")'
