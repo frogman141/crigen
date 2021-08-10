@@ -1,3 +1,2 @@
-*/.ipynb_notebooks/**
-.ipynb_notebooks
-scripts/.ipynb_notebooks/**
+.*
+!/.gitignore
