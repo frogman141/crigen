@@ -15,7 +15,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends:
     igraph,
-    future,
     listenv,
     pbapply,
     parallel,
@@ -23,8 +22,6 @@ Depends:
     tidyverse,
     assertthat,
     matrixStats,
-    future.apply,
     GillespieSSA2,
-    future.batchtools,
 Imports:
     magrittr

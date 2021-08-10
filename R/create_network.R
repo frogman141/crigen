@@ -1,16 +1,9 @@
 #' @export
-create_network <- function(num_tfs,
-                           num_egenes,
-                           num_hks,
-                           bio_net=NULL,
-                           bio_net_name=sample(names(fantom5), size=1),
-                           verbose=FALSE) {
+create_network <- function(num_tfs, num_egenes, num_hks, cache_dir="~/.cache/crigen", bio_net_name=sample(fantom5$dataset_id, size=1)) {
     
-    if (is.null(bio_net)) {
-        # if no biological network provided select one
-        bio_net <- get_network(bio_net_name)
-    }
-    
+    # if no biological network provided select one
+    bio_net <- get_network(bio_net_name, cache_dir)
+       
     # sample grn and housekeeping network from a biological network
     message("Creating GRN...")
     grn <- create_grn(bio_net, num_tfs, num_egenes) %>% igraph::as_data_frame()
@@ -33,12 +26,14 @@ create_network <- function(num_tfs,
                                is_hk=ifelse(grepl('HK', feature_id), TRUE, FALSE),
                                is_egene=ifelse(grepl('EGene', feature_id), TRUE, FALSE),
                                burn=TRUE)
-
-    return (lst(feature_network, feature_info, verbose))
+    
+    simulation_system <- lst(cache_dir)
+    return (lst(feature_network, feature_info, simulation_system))
 }
 
-get_network <- function(bio_net_name) {
-    adj_mat <- fantom5[[bio_net_name]]
+get_network <- function(bio_net_name, cache_dir) {
+    url <- fantom5 %>% filter(dataset_id == bio_net_name) %>% pull(links.download)
+    adj_mat <- download_cacheable_file(url, cache_dir, TRUE)
     
     bio_net <- adj_mat %>%
                     Matrix::summary() %>% 

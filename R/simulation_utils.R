@@ -32,16 +32,15 @@ burn_phase <- function(model, sim, params) {
     sim_system$initial_perturb_state <- burn_out$counts[nrow(burn_out$counts),]
     
     if (sim_system$keep_burn) {
-        burn_out$meta$crispr_type <- model$crispr_param$crispr_type
+        burn_out$meta$crispr_type <- model$simulation_system$crispr_param$crispr_type
         model$simulation$burn <- burn_out
     }
     
     model$simulation_system <- sim_system
-    
     return (model)
 }
 
-#' @export                 
+#' @export
 perturb_phase <- function(model, sim, params) {
     sim_system <- model$simulation_system
     
@@ -53,15 +52,14 @@ perturb_phase <- function(model, sim, params) {
     sim_system$initial_sampling_state <- perturb_out$counts[nrow(perturb_out$counts),]
     
     if (sim_system$keep_perturb) {
-        perturb_out$meta$crispr_type <- model$crispr_param$crispr_type
+        perturb_out$meta$crispr_type <- model$simulation_system$crispr_param$crispr_type
         model$simulation$perturb <- perturb_out
     }
     
     model$simulation_system <- sim_system
-    
     return (model)
 }
- 
+
 #' @export
 sampling_phase <- function(model, sim, params) {
     sim_system <- model$simulation_system
@@ -71,15 +69,12 @@ sampling_phase <- function(model, sim, params) {
     initial_sampling_state <- sim_system$initial_sampling_state
     
     sampling_out <- run_gillispie(sim, 'sampling', params, sampling_time, initial_sampling_state, sim_system)
-    sampling_out$meta$crispr_type <- model$crispr_param$crispr_type
+    sampling_out$meta$crispr_type <- model$simulation_system$crispr_param$crispr_type
     model$simulation$sampling <- sampling_out
-    
     return (model)
 }
 
-
 run_gillispie <- function(sim, phase, params, sim_time, initial_state, sim_system) {
-    
     ssa_algo <- ssa_etl(tau=sim_system$tau)
     reactions <- sim_system$compiled_reactions
     census_interval <- sim_system$census_interval
@@ -97,7 +92,6 @@ run_gillispie <- function(sim, phase, params, sim_time, initial_state, sim_syste
     
     out <- process_ssa_output(sim, phase, out, sim_time)
     colnames(out$counts) <- names(initial_state)
-    
     return (out)
 }
                         
@@ -109,6 +103,6 @@ process_ssa_output <- function(sim, phase, out, sim_time) {
                 mutate(grna=ifelse(target_gene == 'CTRL', str_split(sim_name, '-')[[1]][1],
                                    paste(str_split(sim_name, '-')[[1]][1:2], collapse='-')))
     
-    counts <- out$state %>% Matrix::Matrix(sparse = TRUE)
+    counts <- out$state %>% Matrix::Matrix(sparse = TRUE)   
     return(lst(meta, counts))
 }

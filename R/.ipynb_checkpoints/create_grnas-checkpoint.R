@@ -1,5 +1,4 @@
 #' @export
-# add ctrl grnas to the datasets
 create_grnas <- function(model,
                          ntargets=NA,
                          on_target=NA,
@@ -13,8 +12,8 @@ create_grnas <- function(model,
     assert_that(crispr_type %in% c('Interference', 'Activation', 'Knockout'),
                 msg=paste0("Crispr Type provided not: Interference, Activation, or Knockout"))
     
-    model$crispr_params <- list(crispr_type=crispr_type, on_target=on_target,
-                                off_target=off_target, ctrl_label=ctrl_label)
+    model$simulation_system$crispr_params <- list(crispr_type=crispr_type, on_target=on_target,
+                                                  off_target=off_target, ctrl_label=ctrl_label)
     
     # get the number of targets and select the targets  
     message("Selecting Target Genes...")
@@ -79,7 +78,7 @@ select_target_genes <- function(model, ntargets, target_tf_only) {
 generate_grnas <- function(model, ngrna_per_target, on_target, off_target, library) {
     grna_seq <- 1:ngrna_per_target
     genes <- model$feature_info$feature_id
-    model$grnas_meta <- data.frame(grna=model$crispr_params$ctrl_label, gene=NA, is_target=NA, on_target_activity=NA)
+    model$grnas_meta <- data.frame(grna=model$simulation_system$crispr_params$ctrl_label, gene=NA, is_target=NA, on_target_activity=NA)
     grna_names <- lapply(model$target_genes, function (x) paste0(x, "-grna.", grna_seq)) %>% unlist()
     
     for (grna in grna_names) {
@@ -107,9 +106,9 @@ generate_multiplier <- function(model, crispr_type) {
       
     for (grna_name in grnas_names) {
         
-        if (grna_name == model$crispr_params$ctrl_label) {
+        if (grna_name == model$simulation_system$crispr_params$ctrl_label) {
              grna_multi <- base_multi %>% t %>% as.data.frame
-             rownames(grna_multi) <- c(model$crispr_params$ctrl_label)
+             rownames(grna_multi) <- c(model$simulation_system$crispr_params$ctrl_label)
         } else {
             grna_meta <- model$grnas_meta %>% filter(grna == grna_name)
             prtb_multi <- get_grna_multiplier(grna_meta, crispr_type)
@@ -126,7 +125,7 @@ generate_multiplier <- function(model, crispr_type) {
                          
 generate_simulation_meta <- function(model) {
     
-    crispr_type <- model$crispr_params$crispr_type
+    crispr_type <- model$simulation_system$crispr_params$crispr_type
     
     if (crispr_type != 'Knockout') {
         sample_percentages <- rep(1, nrow(model$simulation_system$multiplier))
@@ -258,7 +257,7 @@ calculate_sample_percentages <- function(model){
     
     for (sim_name in rownames(multiplier)) {
         
-        if (sim_name == model$crispr_params$ctrl_label) {
+        if (sim_name == model$simulation_system$crispr_params$ctrl_label) {
             sample_percentages <- c(sample_percentages, 1)
             next()
         }

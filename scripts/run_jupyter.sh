@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition general
 #SBATCH --no-requeue
-#SBATCH --cpus-per-task=6
+#SBATCH --cpus-per-task=1
 #SBATCH --mem=16G
 #SBATCH --time=24:00:00
 #SBATCH --job-name jupyter-notebook

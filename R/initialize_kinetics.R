@@ -7,8 +7,6 @@ initialize_kinetics <- function(model) {
     # generate kinetics params and formulae
     message("Initializing Networks Kinetics...")
     model <- initializing_gene_kinetics(model)
-    
-    if (model$verbose) message("Creating Reacton Formulas...")
     reactions <- generate_reactions(model)
   
     # create variables
