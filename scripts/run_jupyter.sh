@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition general
 #SBATCH --no-requeue
-#SBATCH --cpus-per-task=6
+#SBATCH --cpus-per-task=1
 #SBATCH --mem=16G
 #SBATCH --time=24:00:00
 #SBATCH --job-name jupyter-notebook
@@ -25,5 +25,5 @@ localhost:${port}  (prefix w/ https:// if using password)
 " > jupyter_notebook_info.txt
 
 # load modules or conda environments here
-source activate perturbverse
+source activate athena_R2
 jupyter lab --no-browser --port=${port} --ip=${node} --notebook-dir=../

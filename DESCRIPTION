@@ -12,19 +12,16 @@ License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Depends:
-    dyno,
-    scran,
-    scater,
-    slurmR,
     igraph,
-    dyngen,
-    dynutils,
+    listenv,
+    pbapply,
     parallel,
+    dynutils,
     tidyverse,
     assertthat,
-    data.table,
-    matrixStats
+    matrixStats,
+    GillespieSSA2,
 Imports:
     magrittr

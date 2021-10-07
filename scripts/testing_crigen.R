@@ -1,4 +1,4 @@
-#!/home/baker02/miniconda3/envs/perturbverse/bin/Rscript
+ #!/home/baker02/miniconda3/envs/perturbverse/bin/Rscript
 #! How many cores per task?
 #SBATCH --cpus-per-task=1
 #! How much memory do you need?
